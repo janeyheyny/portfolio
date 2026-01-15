@@ -1,0 +1,27 @@
+:root {
+
+  --color-luna-white: #EDEAE1;
+  --color-luna-deep: #E2DDCD;
+  --color-pure-black: #000000;
+  --color-carbon-black: #242424;
+  --color-burnt-orange: #A45032;
+  --color-accent: var(--color-burnt-orange);
+  --color-lavendar-purple: #8F5CAE;
+  --color-dusty-plum: #BDACAC;
+  --color-sea-of-blue: #1B48A3;
+
+  --font-raleway: "Raleway", sans-serif;
+  --font-zen-old-mincho: "Zen Old Mincho", serif;
+
+  --font-size-h1: clamp(2.5rem, 4vw, 3rem);
+  --font-size-h2: clamp(2rem, 2.2vw, 2.5rem);
+  --font-size-h3: clamp(1.8rem, 1.7vw, 2rem);
+  --font-size-h4: clamp(1.6rem, 1.5vw, 1.8rem);
+  --font-size-body: 1.6rem;
+  --font-size-small: 1.4rem;
+
+  --spacing-xs: 1rem;
+  --spacing-s: 2rem;
+  --spacing-m: 3rem;
+  --spacing-lg: 4rem;
+}

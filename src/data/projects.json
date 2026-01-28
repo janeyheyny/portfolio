@@ -1,7 +1,7 @@
 {
 	"id": "projects",
 	"title": "Projects Overview",
-	"intro": "Some work I’ve designed, developed, and lovingly overthought. A mix of deep-dive case studies and mentioned projects. Not all my work is still live, some products are no longer avaialble due to business changes. I’ve shared the best available examples and case studies.",
+	"intro": "Some work I've designed, developed, and lovingly overthought. A mix of deep-dive case studies and mentioned projects. Not all my work is still live, some products are no longer available due to business changes. I've shared the best available examples and case studies.",
 	"caseStudies": {
 		"title": "Case Studies",
 		"items": [
@@ -18,14 +18,14 @@
 						"heading": "Problem",
 						"paragraphs": [
 							"When our company acquired this website, it was making almost all of its money through the newsletter. That was fine, but the business wanted to diversify revenue through SEO-driven affiliate marketing — which meant the site needed to rank well in search results and convert users through affiliate links and codes.",
-							"The problem was that the site wasn't built for search or affiliate monetisation at all. Structurally, technically, and content-wise, it didn’t meet the standards needed for performance, maintainability, accessibility, or SEO. We needed to change a newsletter-dependent website into a high-quality, search-optimised affiliate product, in 2 months with team of only 3 developers in total.",
+							"The problem was that the site wasn't built for search or affiliate monetisation at all. Structurally, technically, and content-wise, it didn't meet the standards needed for performance, maintainability, accessibility, or SEO. We needed to change a newsletter-dependent website into a high-quality, search-optimised affiliate product, in 2 months with team of only 3 developers in total."
 						]
 					},
 					{
 						"id": "context",
 						"heading": "Context",
 						"paragraphs": [
-							"For affiliate marketing to really work, the site needed to perform well in Google search results. Search-led sites can be different to  content sites in terms of the heightened importance of clean semantic structure (H1, H2, H3 etc.), accessibility and clarity for both users and crawlers, page speed and performance, structured layout and content hierarchy which all play a big role in rankings. Search engines reward fast, credible and structured sites. We needed to first had to raise the technical quality of the site to meet our team's standards and Google's expectations.",
+							"For affiliate marketing to really work, the site needed to perform well in Google search results. Search-led sites can be different to content sites in terms of the heightened importance of clean semantic structure (H1, H2, H3 etc.), accessibility and clarity for both users and crawlers, page speed and performance, structured layout and content hierarchy which all play a big role in rankings. Search engines reward fast, credible and structured sites. We needed to first had to raise the technical quality of the site to meet our team's standards and Google's expectations.",
 							"During this project I worked heavily on the homepage and deals pages, focusing on improving page and element structure fixing heading hierarchy, implementing new designs and improving semantics. I also replaced the existing CMS WYSIWYG editor with TinyMCE to make life easier for our internal content team (although this was later changed again due to dependency vulnerabilities).",
 							"Alongside the technical work, I collaborated closely with product and design on A/B testing, teaching myself (and my team) how to use the platform and get reliable data. I communicated with the A/B Tasty team directly, analysed results with our designer, and feeding insights back into product decisions and priorities with our PM. So it was very much a cross-functional project."
 						]
@@ -40,19 +40,18 @@
 				]
 			},
 			{
-			  "title": "e-wolf",
+				"title": "e-wolf",
 				"headline": "Freelance Brand Design: What happens when a website needs a brand first?",
 				"description": "What happens when a website needs a brand first?",
 				"image": "/images/project-2.jpg",
 				"tags": ["Design", "Brand Guidelines", "Figma", "Design system"],
 				"href": "/projects/case-study-name-2",
-
 				"content": [
 					{
 						"id": "problem",
 						"heading": "Problem",
 						"paragraphs": [
-							"The client initially approached us for a website redesign, but there was very little existing brand identity to design from. They urgently needed print-ready marketing material for an upcoming event. Without a clear brand system, any new website or collateral risked looking inconsistent and unprofessional and  repeatedly going over design decisions with each new project. We needed to turn a website request into a sustainable design foundation that could support both print and digital work going forward."
+							"The client initially approached us for a website redesign, but there was very little existing brand identity to design from. They urgently needed print-ready marketing material for an upcoming event. Without a clear brand system, any new website or collateral risked looking inconsistent and unprofessional and repeatedly going over design decisions with each new project. We needed to turn a website request into a sustainable design foundation that could support both print and digital work going forward."
 						]
 					},
 					{
@@ -75,7 +74,7 @@
 						"id": "outcome",
 						"heading": "Outcome",
 						"paragraphs": [
-							"The result was a cohesive, reusable brand foundation that e-WOLF can now use across print and digital communication. A full corporate design guideline now enables consistent design decisions going forward.. The client was delivered event-ready marketing material that matched the quality and credibility of the company’s engineering work. A nice surprise in this project was directly seeing improved stakeholder confidence - the marketing manager shared positive feedback and pictures of printed designs in use. The project created a scalable design foundation that can now be used for future deliverables, including the upcoming website redesign.",
+							"The result was a cohesive, reusable brand foundation that e-WOLF can now use across print and digital communication. A full corporate design guideline now enables consistent design decisions going forward.. The client was delivered event-ready marketing material that matched the quality and credibility of the company's engineering work. A nice surprise in this project was directly seeing improved stakeholder confidence - the marketing manager shared positive feedback and pictures of printed designs in use. The project created a scalable design foundation that can now be used for future deliverables, including the upcoming website redesign.",
 							"This project was a great example of how design strategy prevents future chaos: instead of jumping straight into a website redesign without brand structure, we created a foundation first. This is sure to save time, improve consistency, and increase delivery speed of future projects."
 						]
 					}
@@ -88,7 +87,6 @@
 				"image": "/images/project-3.jpg",
 				"tags": ["Strategy", "UI", "Build"],
 				"href": "/projects/case-study-name-3",
-
 				"content": [
 					{
 						"id": "problem",
@@ -112,7 +110,7 @@
 						"paragraphs": [
 							"We delivered a clean, modern front-end foundation under a tight deadline, including the core templates and theming system required to support scale.",
 							"The shop page was completed in under three weeks, providing one of the key entry points for SEO traffic and conversion.",
-							"Although the client didn’t sign immediately, they returned approximately a year later and the project was revived by other team members.",
+							"Although the client didn't sign immediately, they returned approximately a year later and the project was revived by other team members.",
 							"This validated the strength and reusability of the foundation we created."
 						]
 					}
@@ -122,7 +120,7 @@
 				"title": "Portfolio",
 				"headline": "UX & Development Case Study: Designing & building this portfolio",
 				"description": "Designing & building a personal portfolio as a UX engineer",
-				"tags": ["Design", "Strategy", "UX", "Development", "HTML", "SCSS","JavaScript", "json", "GSAP"],
+				"tags": ["Design", "Strategy", "UX", "Development", "HTML", "SCSS", "JavaScript", "json", "GSAP"],
 				"href": "/projects/portfolio",
 				"content": [
 					{
@@ -163,7 +161,6 @@
 								"name": "Mason",
 								"role": "Founder",
 								"tool": "Google Search",
-
 								"sections": [
 									{
 										"heading": "Context",
@@ -219,12 +216,10 @@
 									}
 								]
 							},
-
 							{
 								"name": "Cynthia",
 								"role": "Talent Acquisition Specialist",
 								"tool": "ATS / HR screening platform",
-
 								"sections": [
 									{
 										"heading": "Context",
@@ -338,14 +333,13 @@
 			},
 			{
 				"title": "Wired Modules",
-				"description": "I worked to create injectable modules for partner sites, to allow for discounts to be displayed in article pages. ",
+				"description": "I worked to create injectable modules for partner sites, to allow for discounts to be displayed in article pages.",
 				"image": "",
 				"href": "https://www.wired.com/story/dell-coupon-code/"
 			},
-
 			{
 				"title": "LA Times Discounts",
-				"description": " This was one of my favourite sites to work on in the early days at Samwise.",
+				"description": "This was one of my favourite sites to work on in the early days at Samwise.",
 				"image": "",
 				"href": "https://web.archive.org/web/20241005004825/https://www.latimes.com/coupon-codes"
 			},
@@ -418,5 +412,4 @@
 		],
 		"footerLink": { "label": "See all projects", "href": "#projects" }
 	}
-
 }

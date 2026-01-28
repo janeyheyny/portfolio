@@ -17,7 +17,7 @@
       "amp": "&",
       "line2": "Developing"
     },
-    "intro": "I work for teams who need design and delivery of interfaces that feel good to use. Turning ideas into intuitive interfaces. My work is thoughtfully designed, carefully built, and tested against real-world chaos. I’ve spent 4 years shipping digital products for major publishers like WIRED, TIME, and Condé Nast. Available for freelance projects and ongoing support.",
+    "intro": "I work for teams who need design and delivery of interfaces that feel good to use. Turning ideas into intuitive interfaces. My work is thoughtfully designed, carefully built, and tested against real-world chaos. I've spent 4 years shipping digital products for major publishers like WIRED, TIME, and Condé Nast. Available for freelance projects and ongoing support.",
     "portrait": {
       "src": "/public/portrait.webp",
       "srcset": "/public/portrait.jpg",
@@ -32,8 +32,8 @@
   "about": {
     "id": "about",
     "title": "About",
-    "quote": "I really enjoyed working with Jane at Samwise. She is a dependable, thoughtful frontend developer who deeply cares about accessibility, performance, and user experience. Jane collaborated naturally with UX and engineering, took ownership of her work, and always approached problems with a calm, solutions-focused mindset. She was a pleasure to have on the team and someone I’d happily work with again.",
-    "body": "I’m a UX Engineer and front-end developer focused on accessible, high-performing interfaces. I work across UX strategy, interaction design, and implementation — from concept to production-ready builds."
+    "quote": "I really enjoyed working with Jane at Samwise. She is a dependable, thoughtful frontend developer who deeply cares about accessibility, performance, and user experience. Jane collaborated naturally with UX and engineering, took ownership of her work, and always approached problems with a calm, solutions-focused mindset. She was a pleasure to have on the team and someone I'd happily work with again.",
+    "body": "I'm a UX Engineer and front-end developer focused on accessible, high-performing interfaces. I work across UX strategy, interaction design, and implementation — from concept to production-ready builds."
   },
 
   "services": {
@@ -55,16 +55,19 @@
     "bubbles": [
       {
         "title": "Development",
-        "items": ["Semantic HTML architecture","Accessibility Implementation","Design Systems","Component Development","CSS methodologies","Responsive implementation","Cross-browser compatibility","Performance optimisation","Testing & Quality"]
+        "items": ["Semantic HTML architecture", "Accessibility Implementation", "Design Systems", "Component Development", "CSS methodologies", "Responsive implementation", "Cross-browser compatibility", "Performance optimisation", "Testing & Quality"]
       },
-      { "title": "Product Strategy",
+      {
+        "title": "Product Strategy",
         "items": ["Market research", "Competitive analysis", "User needs assessment", "Stakeholder analysis", "A/B testing & experimentation", "User analytics interpretation", "Technical feasibility assessment"]
       },
-      { "title": "UX / UI Design",
+      {
+        "title": "UX / UI Design",
         "items": ["Personas & user journeys", "A/B testing", "Competitive analysis", "Site mapping", "Component libraries", "Accessibility standards (WCAG)", "Prototyping"]
       },
-      { "title": "Tools",
-        "items": ["Figma","Illustrator","HTML", "SCSS", "JavaScript", "React", "Git", "mySQL"]
+      {
+        "title": "Tools",
+        "items": ["Figma", "Illustrator", "HTML", "SCSS", "JavaScript", "React", "Git", "mySQL"]
       }
     ]
   },
@@ -174,11 +177,11 @@
   "contact": {
     "id": "contact",
     "title": "Have ideas? Say hello",
-    "intro": "If you'd like to collaborate, I’d love to hear more about your project.",
+    "intro": "If you'd like to collaborate, I'd love to hear more about your project.",
     "submitLabel": "Send message",
     "checkboxGroups": [
       {
-        "label": "I’m interested in",
+        "label": "I'm interested in",
         "name": "interestedIn",
         "options": ["UX / UI Design", "Front-end development"]
       },
@@ -201,7 +204,7 @@
   },
 
   "footer": {
-    "cta": "Let’s work together",
+    "cta": "Let's work together",
     "links": [
       { "label": "LinkedIn", "href": "#" },
       { "label": "Behance", "href": "#" },

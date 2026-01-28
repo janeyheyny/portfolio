@@ -1,0 +1,211 @@
+{
+  "nav": {
+    "items": [
+      { "label": "About", "href": "#about" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Projects", "href": "/projects" },
+      { "label": "Skills", "href": "#skills" },
+      { "label": "Experience", "href": "#experience" }
+    ],
+    "cta": { "label": "Contact", "href": "#contact" }
+  },
+
+  "hero": {
+    "jobTitle": "UX Engineer",
+    "headline": {
+      "line1": "Designing",
+      "amp": "&",
+      "line2": "Developing"
+    },
+    "intro": "I work for teams who need design and delivery of interfaces that feel good to use. Turning ideas into intuitive interfaces. My work is thoughtfully designed, carefully built, and tested against real-world chaos. I’ve spent 4 years shipping digital products for major publishers like WIRED, TIME, and Condé Nast. Available for freelance projects and ongoing support.",
+    "portrait": {
+      "src": "/public/portrait.webp",
+      "srcset": "/public/portrait.jpg",
+      "alt": "Portrait of Jane Heyn"
+    },
+    "actions": [
+      { "label": "Work with me", "href": "#contact", "variant": "primary" },
+      { "label": "Case studies", "href": "/projects", "variant": "minimal" }
+    ]
+  },
+
+  "about": {
+    "id": "about",
+    "title": "About",
+    "quote": "I really enjoyed working with Jane at Samwise. She is a dependable, thoughtful frontend developer who deeply cares about accessibility, performance, and user experience. Jane collaborated naturally with UX and engineering, took ownership of her work, and always approached problems with a calm, solutions-focused mindset. She was a pleasure to have on the team and someone I’d happily work with again.",
+    "body": "I’m a UX Engineer and front-end developer focused on accessible, high-performing interfaces. I work across UX strategy, interaction design, and implementation — from concept to production-ready builds."
+  },
+
+  "services": {
+    "id": "services",
+    "title": "Services",
+    "items": [
+      { "label": "UX / UI Design" },
+      { "label": "User Research" },
+      { "label": "Product Strategy" },
+      { "label": "Frontend Development" },
+      { "label": "Design Systems" }
+    ]
+  },
+
+  "skills": {
+    "id": "skills",
+    "title": "Skills",
+    "intro": "A mix of UX thinking, product strategy, and technical execution.",
+    "bubbles": [
+      {
+        "title": "Development",
+        "items": ["Semantic HTML architecture","Accessibility Implementation","Design Systems","Component Development","CSS methodologies","Responsive implementation","Cross-browser compatibility","Performance optimisation","Testing & Quality"]
+      },
+      { "title": "Product Strategy",
+        "items": ["Market research", "Competitive analysis", "User needs assessment", "Stakeholder analysis", "A/B testing & experimentation", "User analytics interpretation", "Technical feasibility assessment"]
+      },
+      { "title": "UX / UI Design",
+        "items": ["Personas & user journeys", "A/B testing", "Competitive analysis", "Site mapping", "Component libraries", "Accessibility standards (WCAG)", "Prototyping"]
+      },
+      { "title": "Tools",
+        "items": ["Figma","Illustrator","HTML", "SCSS", "JavaScript", "React", "Git", "mySQL"]
+      }
+    ]
+  },
+
+  "timeline": [
+    {
+      "type": "work",
+      "title": "Freelance Design & Development",
+      "organization": "Freelance",
+      "image": "freelance-logo.png",
+      "period": "Apr 2025 – Present",
+      "duration": "10 months",
+      "description": "Worked across diverse freelance design and development projects, creating and implementing corporate brand guidelines and graphic designs aligned to client brand identities. Focused on building user-friendly, intuitive digital products."
+    },
+    {
+      "type": "work",
+      "title": "Frontend Developer",
+      "organization": "Samwise",
+      "image": "samwise-logo.png",
+      "period": "Mar 2025 – Dec 2025",
+      "duration": "10 months",
+      "description": "Built responsive and accessible web interfaces using SCSS, JavaScript, HTML, ERB, and React. Implemented accessibility best practices, improved site performance and Lighthouse scores, modernised legacy code, ran A/B tests, managed Git workflows, worked with MySQL/PostgreSQL and Docker, and contributed to CMP and privacy systems."
+    },
+    {
+      "type": "work",
+      "title": "Junior Front-end Developer",
+      "organization": "Samwise",
+      "image": "samwise-logo.png",
+      "period": "Feb 2023 – Mar 2025",
+      "duration": "2 years 2 months",
+      "description": "Developed responsive websites using SCSS, JavaScript, and MySQL while maintaining clean Git workflows. Conducted debugging and code reviews, implemented accessibility features, enhanced performance, collaborated with UX teams, contributed to CMP systems, and expanded skills in Ruby and ERB."
+    },
+    {
+      "type": "work",
+      "title": "Junior Front-end Developer",
+      "organization": "Fonk",
+      "image": "fonk-logo.png",
+      "period": "Jan 2022 – Dec 2022",
+      "duration": "1 year",
+      "description": "Built responsive and mobile-first components using HTML, CSS/SaSS, JavaScript, Bootstrap, and Tailwind. Created Shopify templates, animations, prototypes, and mockups, worked in Craft CMS, contributed to UX/UI feedback, SEO-aware development, and supported content creation and social media design."
+    },
+    {
+      "type": "work",
+      "title": "Website Designer (Internship)",
+      "organization": "Front-end Development South Africa",
+      "image": "fedsa-logo.png",
+      "period": "Jul 2021 – Nov 2021",
+      "duration": "5 months",
+      "description": "Designed websites and mentoring platforms while completing studies. Participated in weekly mentoring sessions and produced branding materials such as letterheads using Figma."
+    },
+    {
+      "type": "education",
+      "title": "Higher Certificate: Web Design & Development",
+      "organization": "Academy of Digital Arts",
+      "image": "academy-of-digital-arts-logo.png",
+      "period": "Mar 2021 – Dec 2021",
+      "duration": "9 months",
+      "description": "Trained in UX fundamentals, UI design, HTML/CSS, responsive design, JavaScript, WordPress, and programming foundations, focusing on creating professional digital platforms."
+    },
+    {
+      "type": "education",
+      "title": "Graphic Design Short Course",
+      "organization": "University of Cape Town",
+      "image": "uct-logo.png",
+      "period": "2020",
+      "duration": "10 weeks",
+      "description": "Studied Adobe Illustrator, digital imaging, visual communication, typography, layout, print and web design, and the business of graphic design."
+    },
+    {
+      "type": "work",
+      "title": "Marketing Assistant (Internship)",
+      "organization": "NCC Education",
+      "image": "ncc-education-logo.png",
+      "period": "May 2020 – Dec 2020",
+      "duration": "8 months",
+      "description": "Supported global marketing operations across Africa, the Middle East, Asia, and the UK, managing social media, content creation, paid campaigns, growth hacking, copywriting, newsletters, regional content, and market research."
+    },
+    {
+      "type": "education",
+      "title": "Short Course: Design Thinking",
+      "organization": "Graduate School of Business – University of Cape Town",
+      "image": "gsb-uct-logo.png",
+      "period": "2019",
+      "duration": "Short course",
+      "description": "Learned design thinking methodologies for innovation across products, services, systems, and business models through the Hasso Plattner d-school program."
+    },
+    {
+      "type": "education",
+      "title": "Honours in Strategic Brand Management",
+      "organization": "Vega School",
+      "image": "vega-logo.png",
+      "period": "2019",
+      "duration": "1 year",
+      "description": "Studied brand strategy, research, brand building, finance, economics, law, and design thinking to develop innovative solutions for real-world companies."
+    },
+    {
+      "type": "education",
+      "title": "Bachelor of Commerce in Marketing Management",
+      "organization": "University of Pretoria",
+      "image": "university-of-pretoria-logo.png",
+      "period": "2016 – 2018",
+      "duration": "3 years",
+      "description": "Built a strong foundation in marketing, business management, finance, economics, accounting, statistics, and project management through real-world brand case studies."
+    }
+  ],
+
+  "contact": {
+    "id": "contact",
+    "title": "Have ideas? Say hello",
+    "intro": "If you'd like to collaborate, I’d love to hear more about your project.",
+    "submitLabel": "Send message",
+    "checkboxGroups": [
+      {
+        "label": "I’m interested in",
+        "name": "interestedIn",
+        "options": ["UX / UI Design", "Front-end development"]
+      },
+      {
+        "label": "Project scope",
+        "name": "projectScope",
+        "options": ["I have a defined scope/brief", "I need help scoping this project"]
+      },
+      {
+        "label": "Timeline",
+        "name": "timeline",
+        "options": ["Unknown", "1–3 months", "3–6 months", "6+ months", "No deadline"]
+      },
+      {
+        "label": "Project type",
+        "name": "projectType",
+        "options": ["New project", "Existing updates", "Brand refresh", "Other"]
+      }
+    ]
+  },
+
+  "footer": {
+    "cta": "Let’s work together",
+    "links": [
+      { "label": "LinkedIn", "href": "#" },
+      { "label": "Behance", "href": "#" },
+      { "label": "GitHub", "href": "https://github.com/janeyheyny" }
+    ]
+  }
+}

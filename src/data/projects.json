@@ -1,0 +1,422 @@
+{
+	"id": "projects",
+	"title": "Projects Overview",
+	"intro": "Some work I’ve designed, developed, and lovingly overthought. A mix of deep-dive case studies and mentioned projects. Not all my work is still live, some products are no longer avaialble due to business changes. I’ve shared the best available examples and case studies.",
+	"caseStudies": {
+		"title": "Case Studies",
+		"items": [
+			{
+				"title": "Rank & Style",
+				"headline": "UX & Front-end Engineering Case study:",
+				"description": "Scrappy under-resourced project quietly becomes the revenue driver",
+				"image": "/images/project-1.jpg",
+				"tags": ["Development", "React", "Performance", "Design", "UX Research", "A/B Testing"],
+				"href": "/projects/case-study-name",
+				"content": [
+					{
+						"id": "problem",
+						"heading": "Problem",
+						"paragraphs": [
+							"When our company acquired this website, it was making almost all of its money through the newsletter. That was fine, but the business wanted to diversify revenue through SEO-driven affiliate marketing — which meant the site needed to rank well in search results and convert users through affiliate links and codes.",
+							"The problem was that the site wasn't built for search or affiliate monetisation at all. Structurally, technically, and content-wise, it didn’t meet the standards needed for performance, maintainability, accessibility, or SEO. We needed to change a newsletter-dependent website into a high-quality, search-optimised affiliate product, in 2 months with team of only 3 developers in total.",
+						]
+					},
+					{
+						"id": "context",
+						"heading": "Context",
+						"paragraphs": [
+							"For affiliate marketing to really work, the site needed to perform well in Google search results. Search-led sites can be different to  content sites in terms of the heightened importance of clean semantic structure (H1, H2, H3 etc.), accessibility and clarity for both users and crawlers, page speed and performance, structured layout and content hierarchy which all play a big role in rankings. Search engines reward fast, credible and structured sites. We needed to first had to raise the technical quality of the site to meet our team's standards and Google's expectations.",
+							"During this project I worked heavily on the homepage and deals pages, focusing on improving page and element structure fixing heading hierarchy, implementing new designs and improving semantics. I also replaced the existing CMS WYSIWYG editor with TinyMCE to make life easier for our internal content team (although this was later changed again due to dependency vulnerabilities).",
+							"Alongside the technical work, I collaborated closely with product and design on A/B testing, teaching myself (and my team) how to use the platform and get reliable data. I communicated with the A/B Tasty team directly, analysed results with our designer, and feeding insights back into product decisions and priorities with our PM. So it was very much a cross-functional project."
+						]
+					},
+					{
+						"id": "outcome",
+						"heading": "Outcome",
+						"paragraphs": [
+							"Even though the business removed all development resources after just two months, within four months, this website became the top-profiting product out of 10+ products in the company portfolio. Affiliate monetisation successfully established through cleaner semantic structure, improved crawlability, maintainability, accessibility & performance in a team of just 3 developers. The team also benefited through learning more about A/B Testing together, as well as our internal content managers experience with the CMS WYSIWYG vastly improved."
+						]
+					}
+				]
+			},
+			{
+			  "title": "e-wolf",
+				"headline": "Freelance Brand Design: What happens when a website needs a brand first?",
+				"description": "What happens when a website needs a brand first?",
+				"image": "/images/project-2.jpg",
+				"tags": ["Design", "Brand Guidelines", "Figma", "Design system"],
+				"href": "/projects/case-study-name-2",
+
+				"content": [
+					{
+						"id": "problem",
+						"heading": "Problem",
+						"paragraphs": [
+							"The client initially approached us for a website redesign, but there was very little existing brand identity to design from. They urgently needed print-ready marketing material for an upcoming event. Without a clear brand system, any new website or collateral risked looking inconsistent and unprofessional and  repeatedly going over design decisions with each new project. We needed to turn a website request into a sustainable design foundation that could support both print and digital work going forward."
+						]
+					},
+					{
+						"id": "context",
+						"heading": "Context",
+						"paragraphs": [
+							"e-WOLF develops custom battery systems. Their work is highly technical and innovative, but their marketing material had never been professionally designed. The brand needed to communicate: reliability and safety, engineering precision, modern innovation, sustainability and forward-thinking We also had a practical constraint: deliver event-ready collateral quickly, without sacrificing brand quality. To reduce risk and deliver value quickly, we broke the project into phases. We started by We creating a scalable visual system from the ground up, in the first phase. Decisions were documented into a corporate guideline that the client could reuse for future work, including for a planned website redesign. Using the guidelines, we designed print material. I contribute to all phases of this project including strategy and implementation, contributing to branding, graphic and UI design."
+						]
+					},
+					{
+						"id": "phases",
+						"heading": "Project Phases",
+						"paragraphs": [
+							"Phase 1 focused on brand foundations including colour palette, typography system, icon style, imagery direction, grid and spacing rules, and core UI components.",
+							"Phase 2 produced corporate design guidelines to ensure consistency across future work.",
+							"Phase 3 delivered marketing collateral for the event including pamphlets, flyers, large-format banners and layout templates for ongoing use."
+						]
+					},
+					{
+						"id": "outcome",
+						"heading": "Outcome",
+						"paragraphs": [
+							"The result was a cohesive, reusable brand foundation that e-WOLF can now use across print and digital communication. A full corporate design guideline now enables consistent design decisions going forward.. The client was delivered event-ready marketing material that matched the quality and credibility of the company’s engineering work. A nice surprise in this project was directly seeing improved stakeholder confidence - the marketing manager shared positive feedback and pictures of printed designs in use. The project created a scalable design foundation that can now be used for future deliverables, including the upcoming website redesign.",
+							"This project was a great example of how design strategy prevents future chaos: instead of jumping straight into a website redesign without brand structure, we created a foundation first. This is sure to save time, improve consistency, and increase delivery speed of future projects."
+						]
+					}
+				]
+			},
+			{
+				"title": "Slickdeals",
+				"headline": "Front-end Case Study: From zero to launch: building a promo codes site for speed and scale",
+				"description": "From zero to launch: building a promo codes site for speed and scale",
+				"image": "/images/project-3.jpg",
+				"tags": ["Strategy", "UI", "Build"],
+				"href": "/projects/case-study-name-3",
+
+				"content": [
+					{
+						"id": "problem",
+						"heading": "Problem",
+						"paragraphs": [
+							"I was one of two front-end developers responsible for the initial build of multiple pages within the /promo-codes subdirectory of Slickdeals. We created a new theme from scratch to avoid the limitations of existing legacy themes and to set a clean foundation for future sites built on top of the same codebase.",
+							"The goal was to create a robust theming system and reusable templates using variables and default styles, reducing repetition and ensuring consistent UI patterns across multiple page types. Delivery was due in under three weeks, with the added pressure that this build formed part of a pitch to win the client."
+						]
+					},
+					{
+						"id": "context",
+						"heading": "Context",
+						"paragraphs": [
+							"The long-term strategy for this site was scalability and search-led growth. The business model relied on traffic coming from Google and monetisation through affiliate links and promo codes, meaning the platform needed to support a large number of store and category pages, SEO-friendly structure and crawlability, fast load times and strong performance, UX patterns that help users scan quickly and take action.",
+							"Visitors were typically not brand-loyal users, they arrived with a specific goal (finding the best deal quickly), low patience for friction, and high expectations of trust and clarity. We therefore focused on consistent UI patterns and performance-conscious front-end development from day one."
+						]
+					},
+					{
+						"id": "outcome",
+						"heading": "Outcome",
+						"paragraphs": [
+							"We delivered a clean, modern front-end foundation under a tight deadline, including the core templates and theming system required to support scale.",
+							"The shop page was completed in under three weeks, providing one of the key entry points for SEO traffic and conversion.",
+							"Although the client didn’t sign immediately, they returned approximately a year later and the project was revived by other team members.",
+							"This validated the strength and reusability of the foundation we created."
+						]
+					}
+				]
+			},
+			{
+				"title": "Portfolio",
+				"headline": "UX & Development Case Study: Designing & building this portfolio",
+				"description": "Designing & building a personal portfolio as a UX engineer",
+				"tags": ["Design", "Strategy", "UX", "Development", "HTML", "SCSS","JavaScript", "json", "GSAP"],
+				"href": "/projects/portfolio",
+				"content": [
+					{
+						"id": "problem",
+						"heading": "Problem",
+						"paragraphs": [
+							"I work in the wonderful digital world, but I don't have a website. I am trying to sell digital experiences without having my own.",
+							"My work lives in scattered pockets: LinkedIn here, Behance there, maybe a CV floating around. I need a space to communicate my full story professionally and something unique to me.",
+							"Most of what I create is shaped around my clients' brands, so there's no central corner of the internet that fully reflects my creative brain, process, and personality.",
+							"I want a single, beautifully designed home for my work, story, case studies, recommendations and experience — a place where people can actually experience what I do, not just read about it."
+						]
+					},
+					{
+						"id": "objectives",
+						"heading": "Objectives",
+						"paragraphs": [
+							"Create a home where people can easily explore my professional world — clear, accessible, and reflective of my personality.",
+							"Visitors should be able to feel the experience I have designed, not just view content.",
+							"Success looks like contact-form emails landing in my inbox, stars growing on my GitHub repositories, genuine client enquiries, and users staying, scrolling, and engaging instead of bouncing away."
+						]
+					},
+					{
+						"id": "audience",
+						"heading": "Audience",
+						"paragraphs": [
+							"My portfolio is designed both for humans and automated screening tools such as ATS platforms, HR screening tools, crawlers and AI summarisation systems.",
+							"For machines, the site prioritises semantic HTML, clear headings, structured content, descriptive URLs, alt text, crawlable content and SEO-friendly terminology aligned with CV tools and job titles.",
+							"Explicit outcomes and metrics are valuable for recruiters and summarisation tools, while case studies provide SEO value and often serve as the first contact point with my portfolio.",
+							"For humans, the design considers fast scanning, visual judgement, emotional trust, and personality — confirming relevance quickly before encouraging deeper exploration into case studies.",
+							"The tone, visuals and experience aim to support hiring managers and founders in assessing not just skills, but communication style, trust and working compatibility."
+						]
+					},
+					{
+						"id": "personas",
+						"heading": "User Personas",
+						"personas": [
+							{
+								"name": "Mason",
+								"role": "Founder",
+								"tool": "Google Search",
+
+								"sections": [
+									{
+										"heading": "Context",
+										"paragraphs": [
+											"Runs a small tech business with limited time. Their in-house design and tech team does not have capacity for additional projects.",
+											"Looking for a freelancer because they need extra hands at times. A full-time position is not necessary right now.",
+											"Agencies feel expensive and impersonal. Searches on Google include terms like 'UX portfolio South Africa', 'UX freelancer', and 'UX freelance Portfolio Cape Town'."
+										]
+									},
+									{
+										"heading": "Goals",
+										"bullets": [
+											"Find someone reliable and skilled",
+											"Find someone with capacity",
+											"Build a longer-term working relationship",
+											"Understand quickly who this person is and what they can deliver",
+											"Feel confident handing over work and access",
+											"Get value for money"
+										]
+									},
+									{
+										"heading": "Behaviour & tools",
+										"bullets": [
+											"Discovers the portfolio via Google",
+											"Reads selectively",
+											"Looks for social proof (testimonials, past work)",
+											"Checks vibe fit",
+											"Checks skills and tool fit",
+											"Wants reassurance before reaching out"
+										]
+									},
+									{
+										"heading": "Pain points",
+										"bullets": [
+											"Agencies being too expensive and impersonal",
+											"Unclear pricing or service scope",
+											"Struggling to find contact details",
+											"Fear of being overcharged or misunderstood",
+											"Fear of mismatch with person and business",
+											"Have not met in person"
+										]
+									},
+									{
+										"heading": "Addressing pain points",
+										"bullets": [
+											"Clear, friendly language that feels human and trustworthy",
+											"Simple explanations of services and process",
+											"Visible real-world examples through case studies",
+											"Social proof and recommendations",
+											"Clear calls-to-action and easy contact",
+											"Future video content to communicate personality"
+										]
+									}
+								]
+							},
+
+							{
+								"name": "Cynthia",
+								"role": "Talent Acquisition Specialist",
+								"tool": "ATS / HR screening platform",
+
+								"sections": [
+									{
+										"heading": "Context",
+										"paragraphs": [
+											"Reviews a high volume of applications daily within an Applicant Tracking System.",
+											"Filters, ranks and compares candidates before reaching out.",
+											"Finds portfolio links inside CVs or ATS profiles and focuses on structured, clear information rather than heavy visuals."
+										]
+									},
+									{
+										"heading": "Goals",
+										"bullets": [
+											"Find the best candidate quickly"
+										]
+									},
+									{
+										"heading": "Behaviour & tools",
+										"bullets": [
+											"Quickly reads through content",
+											"Looks for matching keywords",
+											"Spends brief time on the website",
+											"Checks applicant credibility",
+											"Cross-checks with CV"
+										]
+									},
+									{
+										"heading": "Pain points",
+										"bullets": [
+											"Over-designed unclear portfolios",
+											"Not user friendly",
+											"Having to search in different places for information",
+											"Reading fatigue",
+											"Hidden or vague job titles",
+											"Missing or inconsistent skills"
+										]
+									},
+									{
+										"heading": "Addressing pain points",
+										"bullets": [
+											"Easy scanning with highlighted roles, skills and experience",
+											"Clear role titles",
+											"Intuitive information placement",
+											"Familiar terminology"
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "context",
+						"heading": "Context",
+						"paragraphs": [
+							"Although the site is small, it acts as my primary technical proof and professional presence — with front-end, design and UX being equally important.",
+							"The portfolio needed to be clean, readable, modern and easy to use, while still expressing personality and avoiding a boring or generic feel.",
+							"A major constraint was time: treating the portfolio as a real product with deadlines, shipping a strong v1 quickly to support applications and client outreach.",
+							"The site was designed to grow with me — allowing new case studies, projects and experience to be added over time."
+						]
+					},
+					{
+						"id": "outcome",
+						"heading": "Outcome",
+						"paragraphs": [
+							"The result is a strong v1 portfolio that brings my work into one central place and demonstrates my end-to-end UX engineering approach.",
+							"Success is measured through recruiter and founder responses, increased contact requests, and how effectively the site supports professional opportunities.",
+							"Feedback and engagement metrics before and after launch provide insight into continuous improvements."
+						]
+					}
+				]
+			}
+		]
+	},
+	"otherProjects": {
+		"title": "Other projects",
+		"items": [
+			{
+				"title": "Time Coupons",
+				"description": "Very sucessful project before the Google SEO update in 2024. Not currently live but a link to the Wayback Machine is provided. Refresh to load and interact with the product",
+				"image": "/images/other-1.jpg",
+				"href": "https://web.archive.org/web/20241003014013/https://time.com/coupons/"
+			},
+			{
+				"title": "Seeder De Boer",
+				"description": "I was part of the team that developed the this SDB website and was heavily involved in the development of components through HTML and SCSS & JQuery. I also created animation and interaction through the use of CSS keyframes",
+				"image": "/images/other-2.jpg",
+				"href": "https://www.seederdeboer.nl/"
+			},
+			{
+				"title": "Wired Codes",
+				"description": "In 2023/2024 I helped build a new completely widget in the CMS called the 'multipurpose' widget. Thereafter I helped maintain the site which one of the top priorities in the company. Inactive currently, historical archive link provided.",
+				"image": "",
+				"href": "https://archive.ph/UxJsN"
+			},
+			{
+				"title": "Independent Voucher codes",
+				"description": "I worked on all pages within the Independent Voucher Codes subdomain including home, shop, category, campaign pages, widgets and more.",
+				"image": "",
+				"href": "https://www.independent.co.uk/vouchercodes"
+			},
+			{
+				"title": "Cupon.es",
+				"description": "I started working on this site heavily in 2024 when it became a key revenue generating site. The site was old and therefore new DRY, best practices and accessibility were enhanced. Active",
+				"image": "",
+				"href": "https://cupon.es/"
+			},
+			{
+				"title": "Aesōp Web Design",
+				"description": "I designed a mock website using the Aesōp brand for inspiration",
+				"image": "",
+				"href": ""
+			},
+			{
+				"title": "Wired Modules",
+				"description": "I worked to create injectable modules for partner sites, to allow for discounts to be displayed in article pages. ",
+				"image": "",
+				"href": "https://www.wired.com/story/dell-coupon-code/"
+			},
+
+			{
+				"title": "LA Times Discounts",
+				"description": " This was one of my favourite sites to work on in the early days at Samwise.",
+				"image": "",
+				"href": "https://web.archive.org/web/20241005004825/https://www.latimes.com/coupon-codes"
+			},
+			{
+				"title": "Washington Post Discounts",
+				"description": "Mostly worked on this site in a maintainance capacity after its launch. It was built upon a newer faster and perfomance orientated theme.",
+				"image": "",
+				"href": "https://web.archive.org/web/20231122135436/https://www.washingtonpost.com/coupons"
+			},
+			{
+				"title": "Nouvelobs Code Promos",
+				"description": "This was one of my first main priority sites when I joined Samwise in 2023. I worked closely with the designer to improve https://www.nouvelobs.com/codepromo",
+				"image": "",
+				"href": ""
+			},
+			{
+				"title": "ABC.es Descuentos",
+				"description": "I was involved in a lot of maintainance of https://descuentos.abc.es and also a redesign. It was built on legacy code so I contributed more up to date code using best practices.",
+				"image": "",
+				"href": ""
+			},
+			{
+				"title": "Tecmundo Modules",
+				"description": "I created this module on my own using SCSS, Typescript and Lit. Link provided can be visible by setting your VPN to South America",
+				"image": "",
+				"href": "https://www.tecmundo.com.br/produto/402751-cupom-insider.html"
+			},
+			{
+				"title": "De Huidkliniek",
+				"description": "Worked as a developer on this project while at Fonk. Built and styled components with HTML, CSS, JS & Bootstrap such as the hero, accordion, quote, blog cards, blog pages, and parts of the content sections.",
+				"image": "",
+				"href": "https://dehuidkliniek.nl/"
+			},
+			{
+				"title": "Hoop",
+				"description": "Implementing some desired style changes for the client in CSS, addition and alteration of basic Shopify components in Liquid.",
+				"image": "",
+				"href": "https://www.hoop.co.za/"
+			},
+			{
+				"title": "Little Dragon Project",
+				"description": "This was a project I design and developed in 2021 with the goal of integrating different media types into one site. Link to the GitHub code files is provided.",
+				"image": "",
+				"href": "https://github.com/janeyheyny/2021/tree/main/Multi-media%20Site%20Little%20dragon"
+			},
+			{
+				"title": "Dino Site",
+				"description": "Fun project focusing on impelmenting complex animation through a lightweight librarys (GSAP). The link to the GitHub code is provided.",
+				"image": "",
+				"href": "https://github.com/janeyheyny/2021/tree/main/Dino%20Animated%20Site-%20GSAP"
+			},
+			{
+				"title": "I am",
+				"description": "A small Vue project where I designed and developed a site at the start of my development career. The site code is available on GitHub.",
+				"image": "/images/other-3.jpg",
+				"href": "https://github.com/janeyheyny/2021/tree/main/Affirmations%20Vue%20site%20i.am."
+			},
+			{
+				"title": "Brand Guidelines: Neural Sense",
+				"description": "Designed visual components and guidelines to align brand identity accross platforms. Created with none-designers in mind, back to basics.",
+				"image": "",
+				"href": "https://www.behance.net/gallery/234562763/Brand-Guidelines"
+			},
+			{
+				"title": "Branding & Strategy: Eden all natural",
+				"description": "My final project for my Strategic Branding Postgraduate degree includes product and market research, environmental analysis, insights and strategy.",
+				"image": "",
+				"href": "https://www.flipsnack.com/99AB5FD6AED/branding-eden-all-natural-challenge/"
+			}
+		],
+		"footerLink": { "label": "See all projects", "href": "#projects" }
+	}
+
+}

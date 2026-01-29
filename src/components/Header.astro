@@ -1,0 +1,34 @@
+---
+const { nav } = Astro.props;
+---
+
+<header class="header">
+  <div class="container header__inner">
+
+    <input id="mobile-nav-toggle" class="header__checkbox--mobile" type="checkbox" aria-controls="primary-nav">
+
+    <a class="header__logo" href="/">
+      <img src={nav.logo.href} alt="brand logo">
+    </a>
+
+    <label class="header__hamburger" for="mobile-nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav id="primary-nav" class="header__nav" aria-label="Primary navigation">
+      {nav.items.map((item: { href: string | URL | null | undefined; label: unknown; }) => (
+        <a class="header__nav__item" href={item.href}>{item.label}</a>
+      ))}
+
+      <a class="button button--primary header__cta--mobile" href={nav.cta.href}>
+        {nav.cta.label}
+      </a>
+    </nav>
+
+    <a class="button button--primary header__cta--desktop" href={nav.cta.href}>
+      {nav.cta.label}
+    </a>
+  </div>
+</header>

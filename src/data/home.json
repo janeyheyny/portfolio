@@ -1,5 +1,6 @@
 {
   "nav": {
+    "logo": { "label": "Jane Heyn", "href": "/images/header-logo.svg" },
     "items": [
       { "label": "About", "href": "#about" },
       { "label": "Services", "href": "#services" },

@@ -20,8 +20,8 @@
     },
     "intro": "I work for teams who need design and delivery of interfaces that feel good to use. Turning ideas into intuitive interfaces. My work is thoughtfully designed, carefully built, and tested against real-world chaos. I've spent 4 years shipping digital products for major publishers like WIRED, TIME, and Condé Nast. Available for freelance projects and ongoing support.",
     "portrait": {
-      "src": "/public/portrait.webp",
-      "srcset": "/public/portrait.jpg",
+      "src": "./images/portrait.webp",
+      "srcset": "./images/portrait.jpg",
       "alt": "Portrait of Jane Heyn"
     },
     "actions": [

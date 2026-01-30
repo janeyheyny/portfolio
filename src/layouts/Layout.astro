@@ -1,7 +1,7 @@
 ---
 import "../styles/global.scss";
 
-const { title = "UX Engineer Portfolio | Jane Heyn — Front-End & Product UX", description = "UX Engineer and Front-End Developer with 4 years’ experience building accessible, high-performing web products. Case studies, services, and recommendations." } = Astro.props;
+const { title = "UX Engineer Portfolio | Jane Heyn — Front-End & Product UX", description = "UX Engineer and Front-End Developer with 4 years' experience building accessible, high-performing web products. Case studies, services, and recommendations." } = Astro.props;
 ---
 
 <!doctype html>
@@ -20,5 +20,6 @@ const { title = "UX Engineer Portfolio | Jane Heyn — Front-End & Product UX", 
 
   <body>
     <slot />
+    <script src="../scripts/carousel.js"></script>
   </body>
 </html>

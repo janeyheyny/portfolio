@@ -9,12 +9,20 @@
       "testimonial": "I really enjoyed working with Jane at Samwise. She is a dependable, thoughtful frontend developer who deeply cares about accessibility, performance, and user experience. Jane collaborated naturally with UX and engineering, took ownership of her work, and always approached problems with a calm, solutions-focused mindset. She was a pleasure to have on the team and someone I'd happily work with again."
     },
     {
-      "name": "Alejandro Murcia Ramón",
-      "title": "Senior DevOps Engineer",
-      "company": "Samwise GmbH",
-      "subtitle": "Different teams",
-      "date": "December 16, 2025",
-      "testimonial": "I had the pleasure of working with Jane, and her attention to detail really stands out. She approaches her work in a very thoughtful and meticulous way, always aiming for high-quality results.\n\nBeyond her technical skills, Jane has a strong curiosity and a genuine drive to keep learning, especially in areas beyond her immediate role. This mindset makes her a great collaborator and a valuable team member."
+      "name": "José Ángel Silvera Moreno",
+      "title": "Creative - UI/UX Designer",
+      "company": "Samwise",
+      "subtitle": "Senior to Jane Helen",
+      "date": "December 4, 2025",
+      "testimonial": "Jane is in another level, she consistently delivered a solid work as a developer with a creative UX mindset and a strong will to keep expanding her areas of knowledge. She not only delivers clean, scalable solutions as a dev, but also actively considers usability, accessibility, and the overall user experience in every decision. Jane collaborates seamlessly with design and product teams, she is reliable, detail-oriented, and brings value far beyond her technical role. I highly recommend her for any team looking for a developer who understands the bigger picture."
+    },
+    {
+      "name": "Katarzyna Grząka",
+      "title": "UX/UI Designer @ Dear Francis",
+      "company": "Dear Francis",
+      "subtitle": "Worked on the same team",
+      "date": "December 4, 2025",
+      "testimonial": "Jane is an absolute gem! She has broad knowledge as a front-end developer and UX designer. I've had the pleasure of working with Jane on multiple occasions, and every time she proved that she has a great eye for detail. She is enthusiastic, professional, proactive, and highly collaborative. On top of that, she is one of the most kind-hearted and supportive colleagues you could ask for."
     },
     {
       "name": "Ain Tohvri",
@@ -33,12 +41,36 @@
       "testimonial": "I've had the pleasure of working closely with Jane and she is truly exceptional. She's kind, hardworking and highly skilled in frontend, UX and UI development. Her ambition and eagerness to learn new tools and try new approaches make her stand out. She's always willing to help others and brings a positive, collaborative mindset to every project. I highly recommend her to any team looking for a talented and driven professional!"
     },
     {
+      "name": "Stephanie Buijs",
+      "title": "Front-end Developer at Faraday ✦",
+      "company": "Faraday",
+      "subtitle": "Managed Jane Helen directly",
+      "date": "December 6, 2022",
+      "testimonial": "I had the pleasure of working together with Jane on a Frontend project for one of our clients. Jane is a hard working, fast learning, talented individual and a joy to work with. What impressed me most about Jane is her determination. Whether if it's to get to the root of a bug, creating components or finding ways to improve loading speed, she does not shy away from a challenge. I really enjoyed working together and I know that anyone that will work with her in the future will, too."
+    },
+    {
       "name": "Ana Inés Guagliardi",
       "title": "Full-stack Web Developer",
       "company": "Samwise GmbH",
       "subtitle": "Worked on the same team",
       "date": "December 7, 2025",
       "testimonial": "Jane is an amazing and genuinely kind coworker.\nShe cares deeply about sharing knowledge, always passing along very helpful findings and solutions to the team.\nShe is very focused on always getting the best result, no matter the size of the task; very committed to bringing good practices to the job."
+    },
+    {
+      "name": "Isabella Zimmermann",
+      "title": "Product Designer | B.Sc. User Experience Design",
+      "company": "Structured App",
+      "subtitle": "Studied together",
+      "date": "December 20, 2022",
+      "testimonial": "During my term abroad, I had an opportunity to work on several projects with Jane. On top of an outstanding visual eye, Jane has a solution-oriented, analytical mindset, which enables her to turn her designs into code. I would highly recommend her."
+    },
+    {
+      "name": "Alejandro Murcia Ramón",
+      "title": "Senior DevOps Engineer",
+      "company": "Samwise GmbH",
+      "subtitle": "Different teams",
+      "date": "December 16, 2025",
+      "testimonial": "I had the pleasure of working with Jane, and her attention to detail really stands out. She approaches her work in a very thoughtful and meticulous way, always aiming for high-quality results.\n\nBeyond her technical skills, Jane has a strong curiosity and a genuine drive to keep learning, especially in areas beyond her immediate role. This mindset makes her a great collaborator and a valuable team member."
     },
     {
       "name": "Elio Elmasilari",
@@ -49,22 +81,6 @@
       "testimonial": "Working with Jane has been a real highlight. She communicates clearly, stays calm under pressure, and always brings a steady mindset to whatever we're tackling.\n\nWe worked through plenty of tricky tickets together, and I always appreciated how she approached debugging with patience and curiosity. She's reliable, thoughtful, and genuinely easy to collaborate with."
     },
     {
-      "name": "José Ángel Silvera Moreno",
-      "title": "Creative - UI/UX Designer",
-      "company": "Samwise",
-      "subtitle": "Senior to Jane Helen",
-      "date": "December 4, 2025",
-      "testimonial": "Jane is in another level, she consistently delivered a solid work as a developer with a creative UX mindset and a strong will to keep expanding her areas of knowledge. She not only delivers clean, scalable solutions as a dev, but also actively considers usability, accessibility, and the overall user experience in every decision. Jane collaborates seamlessly with design and product teams, she is reliable, detail-oriented, and brings value far beyond her technical role. I highly recommend her for any team looking for a developer who understands the bigger picture."
-    },
-    {
-      "name": "Katarzyna Grząka",
-      "title": "UX/UI Designer @ Dear Francis",
-      "company": "Dear Francis",
-      "subtitle": "Worked on the same team",
-      "date": "December 4, 2025",
-      "testimonial": "Jane is an absolute gem! She has broad knowledge as a front-end developer and UX designer. I've had the pleasure of working with Jane on multiple occasions, and every time she proved that she has a great eye for detail. She is enthusiastic, professional, proactive, and highly collaborative. On top of that, she is one of the most kind-hearted and supportive colleagues you could ask for."
-    },
-    {
       "name": "Hellen Sanina",
       "title": "Frontend Developer at Samwise",
       "company": "Samwise",
@@ -73,28 +89,12 @@
       "testimonial": "Working with Jane was an absolute pleasure! She is a talented front-end developer with strong expertise in HTML, CSS, and JavaScript, combined with a great eye for web design. Her attention to detail, clean and structured code, and commitment to company standards make her a truly reliable professional.\n\nJane learns incredibly fast and always strives for excellence whether it's coding, writing documentation, or preparing presentations. She is also one of the most positive and thoughtful people to work with. Open, respectful, and always easy to communicate with, she makes teamwork effortless and enjoyable.\n\nI'm grateful for the time we worked together and have no doubt that any team would be lucky to have her!"
     },
     {
-      "name": "Stephanie Buijs",
-      "title": "Front-end Developer at Faraday ✦",
-      "company": "Faraday",
-      "subtitle": "Managed Jane Helen directly",
-      "date": "December 6, 2022",
-      "testimonial": "I had the pleasure of working together with Jane on a Frontend project for one of our clients. Jane is a hard working, fast learning, talented individual and a joy to work with. What impressed me most about Jane is her determination. Whether if it's to get to the root of a bug, creating components or finding ways to improve loading speed, she does not shy away from a challenge. I really enjoyed working together and I know that anyone that will work with her in the future will, too."
-    },
-    {
       "name": "Schalk Venter",
       "title": "Software Engineering | Interaction Design | Academia and Mentoring | Destigmatizing Mental Illness",
-      "company": "Schalk Venter",
+      "company": "Freelancer & Mentor",
       "subtitle": "Was Jane Helen's teacher",
       "date": "October 28, 2021",
       "testimonial": "Something that really stood out to me in my interactions with Jane is her desire to truly understand the technologies and tools she works with. It is refreshing to see someone approach the world of tech with such a critical eye and a pursuit of knowledge that goes beyond the superficial. Despite still being early in her professional career, she has such a phenomenal work ethic that she is likely to be a massive asset to any team."
-    },
-    {
-      "name": "Isabella Zimmermann",
-      "title": "Product Designer | B.Sc. User Experience Design",
-      "company": "Isabella Zimmermann",
-      "subtitle": "Studied together",
-      "date": "December 20, 2022",
-      "testimonial": "During my term abroad, I had an opportunity to work on several projects with Jane. On top of an outstanding visual eye, Jane has a solution-oriented, analytical mindset, which enables her to turn her designs into code. I would highly recommend her."
     }
   ]
 }

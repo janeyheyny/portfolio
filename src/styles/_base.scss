@@ -15,6 +15,33 @@ body {
   background: var(--color-luna-white);
   color: var(--color-pure-black);
   letter-spacing: 0.05rem;
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #997E9B;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: multiply;
+  transition: transform 0.15s ease;
+
+  &.shrink {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+}
+
+h2 {
+  font-weight: 500;
+  transform: uppercase;
+}
+
+h3 {
+
 }
 
 img {

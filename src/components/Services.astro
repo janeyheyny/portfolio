@@ -1,0 +1,19 @@
+---
+const { services } = Astro.props;
+---
+
+<section class="section services" id={services.id}>
+  <div class="container">
+    <h2 class="section__title">{services.title}</h2>
+    <div class="services__grid">
+      {services.items.map((item) => (
+        <div class="services__item">
+          <div class="services__icon">
+            <img src={item.icon} alt="" />
+          </div>
+          <h3 class="services__label">{item.label}</h3>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

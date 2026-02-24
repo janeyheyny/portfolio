@@ -1,0 +1,15 @@
+@use './breakpoints' as *;
+
+@mixin container {
+  padding-inline: 1rem;
+  max-width: 144rem;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    padding-inline: 4rem;
+  }
+
+  @media (min-width: $desktop) {
+    padding-inline: 10rem;
+  }
+}

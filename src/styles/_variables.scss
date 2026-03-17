@@ -1,13 +1,15 @@
 :root {
 
-  --color-luna-white: #EDEAE1;
-  --color-luna-medium: #E2D8CD;
+  --color-luna-white: #EDE7E1;
+  --color-luna-medium: #E2D7CD;
   --color-luna-dark: #CDBDB2;
   --color-pure-black: #000000;
   --color-carbon-black: #242424;
   --color-burnt-orange: #A45032;
+  --color-burnt-orange-faded: #BA7B64;
   --color-accent: var(--color-burnt-orange);
-  --color-lavendar-purple: #8F5CAE;
+  --color-accent-blush: #947171;
+  --color-lavendar-purple: #9B76B2;
   --color-dusty-plum: #BDACAC;
   --color-sea-of-blue: #1B48A3;
 
@@ -18,7 +20,8 @@
   --font-size-h2: clamp(2rem, 2.2vw, 2.5rem);
   --font-size-h3: clamp(1.8rem, 1.7vw, 2rem);
   --font-size-h4: clamp(1.6rem, 1.5vw, 1.8rem);
-  --font-size-body: 1.6rem;
+  --font-size-body: 1.4rem;
+  --font-size-body--desktop: 1.6rem;
   --font-size-small: 1.4rem;
 
   --spacing-xs: 1rem;

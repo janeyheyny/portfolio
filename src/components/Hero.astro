@@ -1,0 +1,76 @@
+---
+const { hero, references } = Astro.props;
+---
+
+<section class="hero">
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <p class="hero__job-title">{hero.jobTitle}</p>
+
+      <h1 class="hero__headline">
+        <span class="hero__headline--serif">{hero.headline.line1}</span>
+        <span class="hero__headline--sans"
+          >{hero.headline.line2}
+          <span class="hero__amp">{hero.headline.amp}</span>
+        </span>
+      </h1>
+
+      <p class="hero__intro">{hero.intro}</p>
+
+      <div class="hero__actions">
+        {
+          hero.actions.map(
+            (action: { label: string; href: string; variant: string }) => (
+              <a
+                href={action.href}
+                class={`button ${action.variant === "primary" ? "button--primary" : "button--minimal"}`}
+              >
+                {action.label}
+              </a>
+            ),
+          )
+        }
+      </div>
+
+      <figure class="hero__figure">
+        <picture>
+          <source srcset="/images/portrait.webp" type="image/webp" />
+          <img
+            src="/images/portrait.jpg"
+            alt={hero.portrait.alt}
+            class="hero__portrait"
+          />
+        </picture>
+      </figure>
+
+      <div class="references__container">
+        <div class="references__grid" data-carousel>
+          {
+            references.references.map((ref: any, index: number) => (
+              <a
+                href="https://www.linkedin.com/in/janehh/details/recommendations/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="reference__card"
+                data-slide={index}
+              >
+                <p class="reference__testimonial">"{ref.testimonial}"</p>
+                <p class="reference__name">{ref.name}</p>
+                <p class="reference__company">{ref.company}</p>
+              </a>
+            ))
+          }
+        </div>
+
+        <a
+          href="https://www.linkedin.com/in/janehh/details/recommendations/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button button--minimal references__cta"
+        >
+          View all recommendations
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

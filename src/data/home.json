@@ -42,7 +42,7 @@
     "title": "Services",
     "items": [
       { "label": "Product & UX Design", "icon": "/images/bubble-design.svg" },
-      { "label": "Web /Front-end development", "icon": "/images/bubble-dev.svg" },
+      { "label": "Front-end development", "icon": "/images/bubble-dev.svg" },
       { "label": "Brand & UI Foundations", "icon": "/images/foundation-bubble.svg" },
       { "label": "Redesigns & Improvements", "icon": "/images/redesign-bubble.svg" },
       { "label": "Consulting & Collaboration", "icon": "/images/consult-bubble.svg" }

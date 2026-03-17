@@ -1,0 +1,27 @@
+---
+const { projects } = Astro.props;
+---
+
+<section class="section projects" id={projects.id}>
+    <h3 class="section__subtitle container">{projects.title}</h2>
+    <div class="projects__grid">
+      {projects.items.map((item) => (
+        <div class={`projects__item ${item.class}`}>
+					<div class="projects__image-wrapper">
+						<div class="projects__image">
+							<img src={item.image} alt="" />
+							{item.href && (
+								<a class="projects__link" href={item.href}>
+									<img src="/images/icon-link.svg" alt="View project" />
+								</a>
+							)}
+						</div>
+					</div>
+          <div class="projects__text-wrapper">
+            <h3 class="projects__name">{item.name}</h3>
+            <p class="projects__description">{item.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+</section>

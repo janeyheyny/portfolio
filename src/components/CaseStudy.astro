@@ -1,0 +1,58 @@
+---
+interface CaseStudyItem {
+    title: string;
+    headline: string;
+    description: string;
+    image?: string;
+    tags?: string[];
+    href?: string;
+    siteHref?: string;
+}
+
+interface Props {
+  caseStudies: {
+    title: string;
+    items: CaseStudyItem[];
+  };
+}
+
+const { caseStudies } = Astro.props;
+
+const designTags = new Set([
+  'design', 'ux research', 'a/b testing', 'brand guidelines',
+  'strategy', 'ux', 'ui', 'figma', 'design system'
+]);
+
+const getTagModifier = (tag: string) =>
+  designTags.has(tag.toLowerCase()) ? 'case-studies__tag--design' : '';
+---
+
+<section class="section case-studies" id="case-studies">
+  <h3 class="section__subtitle container">{caseStudies.title}</h3>
+  <div class="case-studies__grid">
+    {caseStudies.items.map((item) => (
+      <div class="case-studies__item">
+        <div class="case-studies__image">
+          {item.image && <img src={item.image} alt="" />}
+          {item.siteHref && (
+            <a class="case-studies__image-link" href={item.siteHref} target="_blank" rel="noopener noreferrer">
+              <img src="/images/icon-link.svg" alt="View project site" />
+            </a>
+          )}
+        </div>
+        <a class="case-studies__body" href={item.href || '#'}>
+          <h3 class="case-studies__name">{item.title}</h3>
+          <p class="case-studies__headline">{item.headline}</p>
+          <p class="case-studies__description">{item.description}</p>
+          {item.tags && item.tags.length > 0 && (
+            <ul class="case-studies__tags">
+              {item.tags.map((tag) => (
+                  <li class={`case-studies__tag ${getTagModifier(tag)}`}>{tag}</li>
+              ))}
+            </ul>
+          )}
+        </a>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,163 @@
+@use '../breakpoints' as *;
+
+.case-studies {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    bottom: -1px;
+    background-color: var(--color-carbon-black);
+    width: 100vw;
+    height: 322px;
+    display: inline-block;
+    content: " ";
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .section__subtitle {
+    padding-block: 2rem 1.6rem;
+  }
+
+  &__grid {
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 1rem;
+    -webkit-overflow-scrolling: touch;
+    gap: 3rem;
+    margin-left: 1rem;
+
+    @media (min-width: $tablet) {
+      padding-inline: 4rem;
+      margin-left: 4rem;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: 10rem;
+      padding-inline: 0rem;
+    }
+
+
+    @media (min-width: $wide) {
+      margin-left: calc((100vw - 144rem) / 2 + 10rem);
+    }
+  }
+
+  &__item {
+    flex: 0 0 32.8rem;
+    scroll-snap-align: start;
+
+    @media (min-width: $tablet) {
+      flex-basis: 32.8rem;
+    }
+  }
+
+  &__image {
+    background-color: var(--color-luna-dark);
+    height: 27.5rem;
+    width: 32.8rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    img:first-child {
+      max-width: 76%;
+      max-height: 76%;
+      object-fit: contain;
+      display: block;
+    }
+  }
+
+  &__image-link {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__body {
+    background-color: var(--color-luna-white);
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: var(--color-pure-black);
+    padding: 2rem;
+    width: 32.8rem;
+    box-sizing: border-box;
+    height: 31.1rem;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover .case-studies__headline {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  }
+
+  &__name {
+    font-family: var(--font-raleway);
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: 0 0 0.8rem;
+  }
+
+  &__headline {
+    font-family: var(--font-raleway);
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: -0.005rem;
+    margin: 0 0 1rem;
+  }
+
+  &__description {
+    font-family: var(--font-raleway);
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0 0 2rem;
+  }
+
+  &__tags {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  &__tag {
+    border: 1px solid var(--color-burnt-orange-faded);
+    color: var(--color-burnt-orange-faded);
+    font-family: var(--font-raleway);
+    font-weight: 500;
+    height: 36px;
+    font-size: 1.4rem;
+    letter-spacing: -0.014rem;
+    padding: 0.8rem 1.4rem 0.6rem 1.4rem;
+    border-radius: 2rem;
+    white-space: nowrap;
+
+    &--design {
+      border-color: var(--color-lavendar-purple);
+      color: var(--color-lavendar-purple);
+      font-family: var(--font-cormorant);
+      font-size: 1.6rem;
+      padding-top: 0.6rem;
+    }
+  }
+}

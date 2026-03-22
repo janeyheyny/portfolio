@@ -6,9 +6,10 @@
 				"title": "Rank & Style",
 				"headline": "UX & Front-end Engineering Case study:",
 				"description": "Scrappy under-resourced project quietly becomes the revenue driver",
-				"image": "/images/project-1.jpg",
+				"image": "/images/rns-mockup.png",
 				"tags": ["Development", "React", "Performance", "Design", "UX Research", "A/B Testing"],
 				"href": "/projects/case-study-name",
+				"siteHref": "https://rankandstyle.com/",
 				"content": [
 					{
 						"id": "problem",
@@ -40,9 +41,10 @@
 				"title": "e-wolf",
 				"headline": "Freelance Brand Design: What happens when a website needs a brand first?",
 				"description": "What happens when a website needs a brand first?",
-				"image": "/images/project-2.jpg",
+				"image": "/images/ewolf.jpg",
 				"tags": ["Design", "Brand Guidelines", "Figma", "Design system"],
 				"href": "/projects/case-study-name-2",
+				"siteHref": "https://www.behance.net/gallery/220717303/Corporate-Design-Freelance",
 				"content": [
 					{
 						"id": "problem",
@@ -81,9 +83,10 @@
 				"title": "Slickdeals",
 				"headline": "Front-end Case Study: From zero to launch: building a promo codes site for speed and scale",
 				"description": "From zero to launch: building a promo codes site for speed and scale",
-				"image": "/images/project-3.jpg",
+				"image": "/images/slickdeals-mockup.png",
 				"tags": ["Strategy", "UI", "Build"],
 				"href": "/projects/case-study-name-3",
+				"siteHref": "https://slickdeals.net/promo-codes",
 				"content": [
 					{
 						"id": "problem",
@@ -118,6 +121,7 @@
 				"headline": "UX & Development Case Study: Designing & building this portfolio",
 				"description": "Designing & building a personal portfolio as a UX engineer",
 				"tags": ["Design", "Strategy", "UX", "Development", "HTML", "SCSS", "JavaScript", "json", "GSAP"],
+				"image": "/images/portfolio.png",
 				"href": "/projects/portfolio",
 				"content": [
 					{

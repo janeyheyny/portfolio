@@ -7,7 +7,7 @@
     position: absolute;
     background-color: var(--color-carbon-black);
     width: 100vw;
-    height: 306px;
+    height: 295px;
     display: inline-block;
     content: " ";
     z-index: 0;
@@ -17,21 +17,22 @@
   .section__subtitle {
     position: relative;
     background-color: var(--color-carbon-black);
-    padding-block: 3rem 1rem;
+    padding-block: 1rem;
     color: var(--color-luna-white);
+    font-size: 1.8rem;
     z-index: 10;
   }
 
   &__grid {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
     padding: 1rem;
     -webkit-overflow-scrolling: touch;
-    margin-left: 1rem;
+    margin-left: 0;
+    padding-left: 1rem;
 
     @media (min-width: $tablet) {
-      padding-inline: 4rem;
+      padding-inline: 0 4rem;
       margin-left: 4rem;
     }
 
@@ -98,6 +99,25 @@
 
     &:hover {
       opacity: 100%;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+
+    @media (min-width: $tablet) {
+      padding-inline: 4rem;
+    }
+
+    @media (min-width: $desktop) {
+      padding-inline: 10rem;
+    }
+
+    @media (min-width: $wide) {
+      padding-inline: calc((100vw - 144rem) / 2 + 10rem);
     }
   }
 

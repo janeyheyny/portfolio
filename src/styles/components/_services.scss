@@ -1,6 +1,8 @@
 @use '../breakpoints' as *;
 
 .services {
+  padding: 0 0 4rem 0;
+
   @media (min-width: $tablet) {
     padding: 0 0 4rem 0;
   }
@@ -85,7 +87,7 @@
   }
 
   &__label {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
     margin: 0;
     color: var(--color-pure-black);

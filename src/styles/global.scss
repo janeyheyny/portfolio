@@ -67,4 +67,25 @@
       right: -2px;
     }
   }
+
+  &--white {
+    color: var(--color-luna-white);
+    border-bottom-color: var(--color-luna-white);
+
+    &::after {
+      filter: invert(1);
+    }
+
+    &:hover {
+      color: #E2D8CD;
+      border-bottom-color: #E2D8CD;
+
+      &::after {
+        background-image: url("/images/arrow-diagonal.svg");
+        filter: invert(1) sepia(1) saturate(0.3) hue-rotate(340deg) brightness(0.95);
+        top: -2px;
+        right: -2px;
+      }
+    }
+  }
 }

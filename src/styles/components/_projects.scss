@@ -41,6 +41,7 @@
     }
 
     @media (min-width: $wide) {
+      padding-inline: 6rem;
       margin-left: calc((100vw - 144rem) / 2 + 10rem);
     }
   }

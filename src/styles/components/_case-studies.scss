@@ -37,12 +37,11 @@
 
     @media (min-width: $desktop) {
       margin-left: 10rem;
-      padding-inline: 0rem;
     }
-
 
     @media (min-width: $wide) {
       margin-left: calc((100vw - 144rem) / 2 + 10rem);
+      padding-inline: 6rem;
     }
   }
 

@@ -9,6 +9,7 @@ import References from "../components/References.astro";
 import Section from "../components/Section.astro";
 import Services from "../components/Services.astro";
 import Projects from "../components/Projects.astro";
+import Skills from "../components/Skills.astro";
 import CaseStudy from "../components/CaseStudyCard.astro";
 import caseStudies from "../data/caseStudies.json";
 ---
@@ -25,7 +26,7 @@ import caseStudies from "../data/caseStudies.json";
 
     <Projects projects={projects} />
 
-
+    <Skills skills={home.skills} />
 
     <!-- <Section id={home.about.id} title={home.about.title}>
       <p>{home.about.quote}</p>

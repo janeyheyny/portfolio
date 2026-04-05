@@ -20,11 +20,18 @@
   cursor: pointer;
 }
 
-.button--primary {
-  background-color: var(--color-accent);
-  color: var(--color-luna-white);
+.button--secondary {
+  background-color: transparent;
+  color: var(--color-burnt-orange);
+  border: 1px solid var(--color-burnt-orange);
   transition: filter 0.12s ease, transform 0.06s ease;
   width: fit-content;
+
+  &:hover {
+    background-color: var(--color-accent);
+    color: var(--color-luna-white);
+    border-color: transparent;
+  }
 }
 
 .button--secondary {

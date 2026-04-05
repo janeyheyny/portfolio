@@ -22,12 +22,12 @@ const { nav } = Astro.props;
         <a class="header__nav__item" href={item.href}>{item.label}</a>
       ))}
 
-      <a class="button button--primary header__cta--mobile" href={nav.cta.href}>
+      <a class="button button--secondary header__cta--mobile" href={nav.cta.href}>
         {nav.cta.label}
       </a>
     </nav>
 
-    <a class="button button--primary header__cta--desktop" href={nav.cta.href}>
+    <a class="button button--secondary header__cta--desktop" href={nav.cta.href}>
       {nav.cta.label}
     </a>
   </div>

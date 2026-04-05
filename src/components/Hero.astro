@@ -23,7 +23,7 @@ const { hero, references } = Astro.props;
             (action: { label: string; href: string; variant: string }) => (
               <a
                 href={action.href}
-                class={`button ${action.variant === "primary" ? "button--primary" : "button--minimal"}`}
+                class={`button ${action.variant === "primary" ? "button--secondary" : "button--minimal"}`}
               >
                 {action.label}
               </a>

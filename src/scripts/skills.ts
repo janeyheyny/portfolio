@@ -17,8 +17,8 @@ function activate(hoveredBubble: HTMLElement) {
   gsap.set(hoveredBubble, { width: '13rem', height: '13rem', padding: '1.5rem' });
   if (list) gsap.set(list, { maxHeight: 0, marginTop: 0 });
 
-  gsap.to(hoveredBubble, { width: size, height: size, backgroundColor: 'var(--color-carbon-black)', color: 'var(--color-luna-white)', borderColor: 'transparent', padding: '2.5rem', duration: 0.55, ease: 'power3.inOut' });
-  if (list) gsap.to(list, { maxHeight: size, opacity: 1, marginTop: '0.8rem', duration: 1, delay: 0.3, ease: 'power2.inOut' });
+  gsap.to(hoveredBubble, { width: size, height: size, backgroundColor: 'var(--color-carbon-black)', color: 'var(--color-luna-white)', borderColor: 'transparent', padding: '2.5rem', duration: 1, ease: 'power2.inOut' });
+  if (list) gsap.to(list, { maxHeight: size, opacity: 1, marginTop: '0.8rem', duration: 1.8, delay: 0.2, ease: 'power2.inOut' });
 
   openBubble = hoveredBubble;
 }
@@ -26,8 +26,11 @@ function activate(hoveredBubble: HTMLElement) {
 function deactivate(hoveredBubble: HTMLElement) {
   const list = hoveredBubble.querySelector<HTMLElement>('.skills__bubble-list');
 
+  gsap.killTweensOf(hoveredBubble);
+  if (list) gsap.killTweensOf(list);
+
   if (list) gsap.to(list, { maxHeight: 0, opacity: 0, marginTop: 0, duration: 0.8, ease: 'power2.out' });
-  gsap.to(hoveredBubble, { width: '13rem', height: '13rem', backgroundColor: 'transparent', color: 'var(--color-carbon-black)', borderColor: 'var(--color-carbon-black)', padding: '1.5rem', duration: 0.5, delay: 0.1, ease: 'power3.inOut' });
+  gsap.to(hoveredBubble, { width: '13rem', height: '13rem', backgroundColor: 'transparent', color: 'var(--color-carbon-black)', borderColor: 'var(--color-carbon-black)', padding: '1.5rem', duration: 1.2, delay: 0.5, ease: 'power3.inOut' });
 }
 
 if (section) {

@@ -56,19 +56,19 @@
     "bubbles": [
       {
         "title": "Development",
-        "items": ["Semantic HTML architecture", "Accessibility Implementation", "Design Systems", "Component Development", "CSS methodologies", "Responsive implementation", "Cross-browser compatibility", "Performance optimisation", "Testing & Quality"]
-      },
-      {
-        "title": "Product Strategy",
-        "items": ["Market research", "Competitive analysis", "User needs assessment", "Stakeholder analysis", "A/B testing & experimentation", "User analytics interpretation", "Technical feasibility assessment"]
+        "items": ["HTML", "CSS / SCSS", "JavaScript", "TypeScript", "React", "Component development", "CSS methodologies", "Responsive implementation", "Cross-browser compatibility", "Performance optimisation", "Testing & quality", "Code reviews", "Git", "MySQL", "CMP"]
       },
       {
         "title": "UX / UI Design",
-        "items": ["Personas & user journeys", "A/B testing", "Competitive analysis", "Site mapping", "Component libraries", "Accessibility standards (WCAG)", "Prototyping"]
+        "items": ["Design systems", "Accessibility (WCAG)", "Component libraries", "Personas & user journey mapping", "Site mapping", "Prototyping", "Bridging design & development", "A/B testing"]
+      },
+      {
+        "title": "Product Strategy",
+        "items": ["Competitive analysis", "A/B testing", "User needs assessment", "Stakeholder analysis", "User analytics interpretation", "Technical feasibility assessment", "Market research", "Site mapping"]
       },
       {
         "title": "Tools",
-        "items": ["Figma", "Illustrator", "HTML", "SCSS", "JavaScript", "React", "Git", "mySQL"]
+        "items": ["Figma", "Illustrator", "Git", "MySQL", "A/B Tasty"]
       }
     ]
   },

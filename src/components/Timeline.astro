@@ -1,0 +1,102 @@
+---
+interface TimelineItem {
+  type: string;
+  title: string;
+  organisation: string;
+  image: string;
+  period: string;
+  duration: string;
+  description: string;
+}
+
+interface Props {
+  id: string;
+  title: string;
+  items: TimelineItem[];
+}
+
+const { id, title, items } = Astro.props;
+---
+
+<section class="section timeline-section" id={id}>
+  <div class="container">
+    <div class="timeline__wrapper">
+      <h2 class="section__title">{title}</h2>
+
+      <div class="timeline">
+        <div class="timeline__vertical-line"></div>
+
+        {items.map((item, index) => {
+          const year = item.period.split(" ").slice(-1)[0];
+          const prevYear = index > 0 ? items[index - 1].period.split(" ").slice(-1)[0] : null;
+          const isExpanded = index === 0;
+          const showYear = year !== prevYear;
+          const hidden = !showYear ? " timeline__year--hidden" : "";
+
+          return (
+            <div class={`timeline__item${index === 0 ? " timeline__item--first" : ""}`} data-timeline-item>
+              <div class={`timeline__year${hidden}`}>{year}</div>
+              <div class={`timeline__horizontal-line${hidden.replace("timeline__year", "timeline__horizontal-line")}`}></div>
+
+              <div class="timeline__icon-wrapper">
+                <div class="timeline__icon" data-type={item.type}>
+                  <img
+                    src={`/images/${item.image}`}
+                    alt={item.organisation}
+                    class="timeline__icon-image"
+                  />
+                </div>
+              </div>
+
+              <div class="timeline__content">
+                <div class="timeline__headline">
+                  <h3 class="timeline__title">{item.title}</h3>
+                  <p class="timeline__organisation">{"| " + item.organisation}</p>
+                </div>
+                <p class="timeline__duration">{item.duration}</p>
+
+                <div
+                  class={`timeline__details ${isExpanded ? "timeline__details--expanded" : ""}`}
+                >
+                  <p class="timeline__period">{item.period}</p>
+                  <p class="timeline__description">{item.description}</p>
+                </div>
+
+                <button
+                  class="timeline__toggle"
+                  data-timeline-toggle
+                  aria-expanded={isExpanded}
+                >
+                  <span class="timeline__toggle-text">
+                    {isExpanded ? "See less" : "See more"}
+                  </span>
+                  <svg
+                    class="timeline__toggle-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <button class="timeline__scroll-btn timeline__scroll-btn--down" data-timeline-scroll-down aria-label="Scroll down">
+        <img src="/images/scroll-btn.svg" alt="Scroll down" />
+      </button>
+      <button class="timeline__scroll-btn timeline__scroll-btn--up" data-timeline-scroll-up aria-label="Scroll up" style="display: none;">
+        <img src="/images/scroll-up.svg" alt="Scroll up" />
+      </button>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  import "../scripts/timeline";
+</script>

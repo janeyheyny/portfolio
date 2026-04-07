@@ -2,6 +2,7 @@
 import projects from "../data/projects.json";
 import home from "../data/home.json";
 import references from "../data/references.json";
+import timeline from "../data/timeline.json";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
@@ -10,6 +11,7 @@ import Section from "../components/Section.astro";
 import Services from "../components/Services.astro";
 import Projects from "../components/Projects.astro";
 import Skills from "../components/Skills.astro";
+import Timeline from "../components/Timeline.astro";
 import CaseStudy from "../components/CaseStudyCard.astro";
 import caseStudies from "../data/caseStudies.json";
 ---
@@ -27,6 +29,8 @@ import caseStudies from "../data/caseStudies.json";
     <Projects projects={projects} />
 
     <Skills skills={home.skills} />
+
+    <Timeline id="experience" title="Education and Experience" items={timeline} />
 
     <!-- <Section id={home.about.id} title={home.about.title}>
       <p>{home.about.quote}</p>

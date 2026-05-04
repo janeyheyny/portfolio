@@ -14,6 +14,7 @@ import Skills from "../components/Skills.astro";
 import Timeline from "../components/Timeline.astro";
 import CaseStudy from "../components/CaseStudyCard.astro";
 import caseStudies from "../data/caseStudies.json";
+import Contact from "../components/Contact.astro";
 ---
 
 <Layout>
@@ -32,72 +33,6 @@ import caseStudies from "../data/caseStudies.json";
 
     <Timeline id="experience" title="Education and Experience" items={timeline} />
 
-    <!-- <Section id={home.about.id} title={home.about.title}>
-      <p>{home.about.quote}</p>
-    </Section>
+    <Contact email="heynjane@gmail.com" />
 
-    <Section id={home.services.id} title={home.services.title}>
-      <div class="pills">
-        {home.services.items.map((item) => (
-          <span class="pill">{item.label}</span>
-        ))}
-      </div>
-    </Section>
-
-    <Section id={home.skills.id} title={home.skills.title} intro={home.skills.intro}>
-      <div class="pills">
-        {home.skills.bubbles.map((skill) => (
-          <span class="pill">{skill.title}</span>
-		  <span class="pill">{skill.items}</span>
-        ))}
-      </div>
-    </Section>
-
-	<Section id={projects.id} title={projects.title}>
-	  <div title={projects.caseStudies.title}>
-
-		{projects.caseStudies.items.map((item) => (
-			<img src={item.image} alt="Project Mockup" />
-			<a href={item.href} target="_blank" class="project-link">
-				<div>{item.title}</div>
-				<div>{item.headline}</div>
-				<div>{item.description}</div>
-				<div>{item.tags}</div>
-			</a>
-		))}
-	  </div>
-	  <div title={projects.otherProjects.title}>
-		{projects.otherProjects.items.map((item) => (
-		  <span>{item.title}</span>
-		))}
-	  </div>
-	</Section>
-
-    <Section id={home.experience.id} title={home.experience.title}>
-      <div class="timeline">
-        {home.experience.items.map((e) => (
-          <div class="timeline__item">
-            <p class="timeline__year">{e.year}</p>
-            <p class="timeline__title">{e.title}</p>
-            <p class="timeline__summary">{e.summary}</p>
-          </div>
-        ))}
-      </div>
-    </Section>
-
-    <Section id={home.contact.id} title={home.contact.title} intro={home.contact.intro}>
-      <a class="btn btn--primary" href="mailto:you@email.com">{home.contact.submitLabel}</a>
-    </Section> -->
-  </main>
-
-  <!-- <footer class="section">
-    <div class="container">
-      <h2 class="section__title">{home.footer.cta}</h2>
-      <div class="pills" style="margin-top: 1.6rem">
-        {home.footer.links.map((l) => (
-          <a class="pill" href={l.href} target="_blank">{l.label}</a>
-        ))}
-      </div>
-    </div>
-  </footer> -->
 </Layout>

@@ -6,6 +6,7 @@ import MoreProjects from "../components/MoreProjects.astro";
 import caseStudiesData from "../data/caseStudies.json";
 import projectsData from "../data/projects.json";
 import homeData from "../data/home.json";
+import Contact from "../components/Contact.astro";
 ---
 
 <Layout
@@ -24,4 +25,5 @@ import homeData from "../data/home.json";
     </section>
   </main>
   <MoreProjects projects={projectsData} />
+  <Contact email="heynjane@gmail.com" />
 </Layout>

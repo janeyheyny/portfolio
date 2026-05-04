@@ -1,0 +1,17 @@
+---
+interface Props {
+  email: string;
+}
+
+const { email } = Astro.props;
+---
+
+<section class="contact" id="contact">
+  <div class="container contact__inner">
+    <p class="contact__label">Let's get in touch</p>
+    <div class="contact__mail-block">
+      <a class="contact__email" href={`mailto:${email}`}>{email}</a>
+      <a class="button contact__cta button--secondary" href={`mailto:${email}`}>Send email</a>
+    </div>
+  </div>
+</section>

@@ -14,35 +14,33 @@
   &::before {
     background: linear-gradient(180deg, rgba(36, 36, 36, 0.00) 0%, #242424 66.83%);
     content: '';
-    height: 4rem;
+    height: 6rem;
     left: 0;
     position: absolute;
-    bottom: 8rem;
+    bottom: 5.8rem;
     width: 100%;
     z-index: 10;
+    pointer-events: none;
+
+    @media (min-width: $tablet) {
+      bottom: 8rem;
+      height: 4rem;
+    }
   }
 }
 
 .timeline {
   position: relative;
-  margin-top: 3rem;
+  margin-top: 5rem;
   max-height: 80vh;
   max-width: 88rem;
-  overflow-y: scroll;
+  overflow-y: hidden;
   scroll-behavior: smooth;
-  scrollbar-width: none;
-
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-
-  @media (max-width: $tablet) {
-    touch-action: none;
-  }
+  padding-left: 3rem;
 
   @media (min-width: $tablet) {
     margin-top: 6rem;
+    padding-left: 0;
   }
 }
 
@@ -56,6 +54,7 @@
   bottom: 0;
   width: 1px;
   background: var(--color-luna-white);
+  left: 1rem;
 
   @media (min-width: $tablet) {
     left: 15.4rem;
@@ -63,16 +62,22 @@
 }
 
 .timeline__item {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  grid-template-areas:
+    "year    year"
+    "icon    content";
+  row-gap: 0.8rem;
+  column-gap: 1.5rem;
+  margin-bottom: 3rem;
   position: relative;
-  gap: 4rem;
 
   @media (min-width: $tablet) {
-    margin-bottom: 3rem;
-    align-items: flex-start;
+    display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    gap: 4rem;
+    margin-bottom: 3rem;
   }
 
   @media (min-width: $desktop) {
@@ -86,29 +91,54 @@
   margin: 0;
   font-family: var(--font-newsreader);
   letter-spacing: -0.18px;
-
-  @media (min-width: $tablet) {
-  }
+  grid-area: year;
 
   &--hidden {
-    visibility: hidden;
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: block;
+      visibility: hidden;
+    }
   }
 }
 
 .timeline__horizontal-line {
-  height: 1px;
-  background: var(--color-luna-white);
-  opacity: 40%;
-  margin-top: 15px;
-  position: relative;
-
-  &--hidden {
-    visibility: hidden;
-  }
+  display: none;
 
   @media (min-width: $tablet) {
+    display: block;
+    height: 1px;
+    background: var(--color-luna-white);
+    opacity: 40%;
+    margin-top: 15px;
+    position: relative;
     min-width: 12rem;
 
+    &--hidden {
+      visibility: hidden;
+    }
+  }
+}
+
+.timeline__item--first {
+  &::before {
+    content: '';
+    position: absolute;
+    left: -2.8rem;
+    top: 0;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    border: 1px solid var(--color-luna-white);
+    background: var(--color-carbon-black);
+    z-index: 10;
+
+    @media (min-width: $tablet) {
+      display: none;
+      left: calc(-3rem - 0.85rem);
+      top: 0.6rem;
+    }
   }
 }
 
@@ -132,7 +162,7 @@
 }
 
 .timeline__icon-wrapper {
-
+  grid-area: icon;
 }
 
 .timeline__icon {
@@ -157,16 +187,17 @@
 
 .timeline__content {
   max-width: 53rem;
-
-  @media (min-width: $tablet) {
-    grid-column: 2;
-    grid-row: 1;
-  }
+  grid-area: content;
 }
 
 .timeline__headline {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .timeline__title {
@@ -188,9 +219,15 @@
   font-weight: 200;
   margin: 0 0 0.8rem;
   font-family: var(--font-raleway);
-
   display: inline-block;
-  // white-space: nowrap;
+}
+
+.timeline__org-separator {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: inline;
+  }
 }
 
 .timeline__period {
@@ -278,7 +315,11 @@
   cursor: pointer;
   z-index: 100;
   transition: opacity 0.3s ease;
-  padding: 2rem;
+  padding: 2rem 2rem 2rem 0;
+
+  @media (min-width: $tablet) {
+    padding: 2rem;
+  }
 
   img {
     width: 2rem;
@@ -296,13 +337,22 @@
 
   &--down {
     bottom: -4rem;
-    left: 12.5rem;
+    left: 0;
     z-index: 100;
+
+    @media (min-width: $tablet) {
+      left: 12.5rem;
+    }
   }
 
   &--up {
-    top: 4rem;
-    left: 12.5rem;
+    top: 2.5rem;
+    left: 0;
     z-index: 100;
+
+    @media (min-width: $tablet) {
+      top: 4rem;
+      left: 12.5rem;
+    }
   }
 }

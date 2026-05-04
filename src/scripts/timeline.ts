@@ -1,25 +1,4 @@
-const disableMobileScroll = () => {
-  const timelineContainer = document.querySelector(".timeline") as HTMLElement;
-  if (!timelineContainer) return;
-
-  timelineContainer.addEventListener(
-    "wheel",
-    (e) => {
-      e.preventDefault();
-    },
-    { passive: false }
-  );
-
-  timelineContainer.addEventListener(
-    "touchmove",
-    (e) => {
-      e.preventDefault();
-    },
-    { passive: false }
-  );
-};
-
-const initTimeline = () => {
+const initTimelineDetailsToggles = () => {
   const toggleButtons = document.querySelectorAll("[data-timeline-toggle]");
 
   toggleButtons.forEach((button) => {
@@ -42,7 +21,7 @@ const initTimeline = () => {
   });
 };
 
-const updateVerticalLineHeight = () => {
+const syncTimelineVerticalLineHeight = () => {
   const timelineContainer = document.querySelector(".timeline") as HTMLElement;
   const verticalLine = document.querySelector(".timeline__vertical-line") as HTMLElement;
 
@@ -52,45 +31,44 @@ const updateVerticalLineHeight = () => {
   verticalLine.style.height = `${height}px`;
 };
 
-const initScrollButton = () => {
-  const scrollDownBtn = document.querySelector("[data-timeline-scroll-down]") as HTMLElement;
-  const scrollUpBtn = document.querySelector("[data-timeline-scroll-up]") as HTMLElement;
+const initTimelineScrollButtons = () => {
+  const scrollDownButton = document.querySelector("[data-timeline-scroll-down]") as HTMLElement;
+  const scrollUpButton = document.querySelector("[data-timeline-scroll-up]") as HTMLElement;
   const timelineContainer = document.querySelector(".timeline") as HTMLElement;
 
-  if (!scrollDownBtn || !scrollUpBtn || !timelineContainer) return;
+  if (!scrollDownButton || !scrollUpButton || !timelineContainer) return;
 
-  const checkScrollPosition = () => {
+  const updateScrollButtonVisibility = () => {
     const isAtBottom =
       timelineContainer.scrollHeight - timelineContainer.scrollTop - timelineContainer.clientHeight < 10;
     const isAtTop = timelineContainer.scrollTop < 10;
 
-    scrollDownBtn.style.display = isAtBottom ? "none" : "flex";
-    scrollUpBtn.style.display = isAtTop ? "none" : "flex";
+    scrollDownButton.style.display = isAtBottom ? "none" : "flex";
+    scrollUpButton.style.display = isAtTop ? "none" : "flex";
   };
 
-  scrollDownBtn.addEventListener("click", () => {
+  scrollDownButton.addEventListener("click", () => {
     timelineContainer.scrollBy({
       top: 400,
       behavior: "smooth",
     });
   });
 
-  scrollUpBtn.addEventListener("click", () => {
+  scrollUpButton.addEventListener("click", () => {
     timelineContainer.scrollBy({
       top: -400,
       behavior: "smooth",
     });
   });
 
-  timelineContainer.addEventListener("scroll", checkScrollPosition);
-  checkScrollPosition();
+  timelineContainer.addEventListener("scroll", updateScrollButtonVisibility);
+  updateScrollButtonVisibility();
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  disableMobileScroll();
-  initTimeline();
-  updateVerticalLineHeight();
-  initScrollButton();
+  initTimelineDetailsToggles();
+  syncTimelineVerticalLineHeight();
+  initTimelineScrollButtons();
 
-  window.addEventListener("resize", updateVerticalLineHeight);
+  window.addEventListener("resize", syncTimelineVerticalLineHeight);
 });

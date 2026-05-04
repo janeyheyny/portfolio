@@ -51,7 +51,7 @@ const { id, title, items } = Astro.props;
               <div class="timeline__content">
                 <div class="timeline__headline">
                   <h3 class="timeline__title">{item.title}</h3>
-                  <p class="timeline__organisation">{"| " + item.organisation}</p>
+                  <p class="timeline__organisation"><span class="timeline__org-separator">| </span>{item.organisation}</p>
                 </div>
                 <p class="timeline__duration">{item.duration}</p>
 

@@ -67,7 +67,7 @@
     justify-content: center;
     overflow: hidden;
 
-    img:first-child {
+    > img {
       max-width: 76%;
       max-height: 76%;
       object-fit: contain;
@@ -77,7 +77,7 @@
     }
   }
 
-  &__item:hover &__image img:first-child {
+  &__image-link:hover ~ img {
     transform: scale(1);
   }
 
@@ -121,15 +121,20 @@
     font-family: var(--font-raleway);
     font-weight: 700;
     font-size: 1.6rem;
-    margin: 0 0 0.8rem;
+    margin: 0 0 1.2rem;
   }
 
   &__headline {
     font-family: var(--font-raleway);
     font-weight: 600;
     font-size: 1.4rem;
-    letter-spacing: -0.005rem;
-    margin: 0 0 1rem;
+    letter-spacing: 0.02rem;
+          text-decoration: underline;
+          text-decoration-thickness: 1px;
+      text-underline-offset: 1.5px;
+      line-height: 150%;
+      text-decoration-color: rgba(0, 0, 0, 0.09);
+    margin: 0 0 1.3rem;
   }
 
   &__description {

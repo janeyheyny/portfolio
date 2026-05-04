@@ -36,12 +36,12 @@ const getTagModifier = (tag: string) =>
     {caseStudies.items.map((item) => (
       <div class="case-studies__item">
         <div class="case-studies__image">
-          {item.image && <img src={item.image} alt="" />}
           {item.siteHref && (
             <a class="case-studies__image-link" href={item.siteHref} target="_blank" rel="noopener noreferrer">
               <img src="/images/icon-link.svg" alt="View project site" />
             </a>
           )}
+          {item.image && <img src={item.image} alt="" />}
         </div>
         <a class="case-studies__body" href={item.href || '#'}>
           <h3 class="case-studies__name">{item.title}</h3>

@@ -187,7 +187,7 @@
 			"description": "Implementing some desired style changes for the client in CSS, addition and alteration of basic Shopify components in Liquid.",
 			"image": "/images/hoop-logo.png",
 			"href": "https://www.hoop.co.za/",
-			"techTags": ["Development", "SCSS", "Liquid"],
+			"techTags": ["Development", "SCSS", "Shopify","Liquid"],
 			"designTags": []
 		},
 		{
@@ -195,10 +195,10 @@
 			"class": "i-am",
 			"date": "2021",
 			"role": "Design & Development",
-			"description": "A small Vue project where I designed and developed a site at the start of my development career. The site code is available on GitHub.",
+			"description": "A small Vue.js project where I designed and developed a site at the start of my development career. The site code is available on GitHub.",
 			"image": "/images/iam-mockup.png",
 			"href": "https://github.com/janeyheyny/2021/tree/main/Affirmations%20Vue%20site%20i.am.",
-			"techTags": ["Development", "Vue", "HTML", "SCSS"],
+			"techTags": ["Development", "Vue.js", "HTML", "SCSS"],
 			"designTags": ["Design", "Figma"]
 		},
 		{

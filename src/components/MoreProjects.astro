@@ -41,41 +41,21 @@ const { projects } = Astro.props;
                 rel="noopener noreferrer"
                 aria-label={`Visit ${item.name} website`}
               >
-                <svg
-                  viewBox="0 0 20 20"
-                  width="20"
-                  height="20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M11 3H17V9"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M17 3L8 12"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M9 5H4C3.44772 5 3 5.44772 3 6V16C3 16.5523 3.44772 17 4 17H14C14.5523 17 15 16.5523 15 16V11"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                <img src="/images/icon-link.svg" alt="" aria-hidden="true" />
               </a>
             )}
           </div>
           <div class="more-projects__body">
-            <p class="more-projects__name">{item.name}</p>
+            {item.href ? (
+              <a
+                class="more-projects__name more-projects__name--link"
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >{item.name}</a>
+            ) : (
+              <p class="more-projects__name">{item.name}</p>
+            )}
             <p class="more-projects__description">{item.description}</p>
             <CaseStudyTags techTags={item.techTags} designTags={item.designTags} />
           </div>

@@ -38,7 +38,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 5 / 3;
   }
 
   &__image {
@@ -46,7 +46,8 @@
     width: 20rem;
     height: 100%;
     object-fit: contain;
-    max-height: 20rem;
+    max-height: 10rem;
+    max-width: 13rem;
   }
 
   &__link {
@@ -65,7 +66,7 @@
   }
 
   &__body {
-    border: 1px solid var(--color-carbon-black);
+    border: 1px solid #C8C3BF;
     padding: 2rem;
     flex: 1;
     display: flex;
@@ -77,6 +78,16 @@
     font-weight: 700;
     font-size: 1.6rem;
     margin: 0 0 1rem;
+    display: block;
+    color: inherit;
+
+    &--link {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &__description {
@@ -84,9 +95,6 @@
     font-size: 1.2rem;
     line-height: 1.6;
     margin: 0 0 1.5rem;
-  }
-
-  .case-studies__tags {
-    margin-top: auto;
+    min-height: 13.5rem;
   }
 }

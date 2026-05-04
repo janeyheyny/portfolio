@@ -10,7 +10,9 @@
 			"date": "2026",
 			"description": "Silhouette Exchange is a sheilded exchange platform on the Hyperliquid blockchain. I work closely with the designer and review frontend code. I was responsible for making the site pixel perfect and implementing the design to perfection.",
 			"image": "/images/silhouette-logo.svg",
-			"href": "https://app.silhouette.exchange/trade"
+			"href": "https://app.silhouette.exchange/trade",
+			"techTags": ["Development", "Tailwind", "React", "TypeScript"],
+			"designTags": []
 		},
 		{
 			"name": "Time Coupons",
@@ -19,7 +21,9 @@
 			"date": "2023",
 			"description": "I was one of two developers who built this project. Time saw great initail sucess after it's launch. Personally, it was a dream brand to work on. The site is not currently live after changes in the SEO industry by Google in 2024. Wayback Machine is provided, refresh on load to (hopefully) interact with the site",
 			"image": "/images/time-logo.png",
-			"href": "https://web.archive.org/web/20241003014013/https://time.com/coupons/"
+			"href": "https://web.archive.org/web/20241003014013/https://time.com/coupons/",
+			"techTags": ["Development", "HTML", "SCSS"],
+			"designTags": []
 		},
 		{
 			"name": "Seeder De Boer",
@@ -28,7 +32,9 @@
 			"date": "2022",
 			"description": "I was part of the team that developed the this SDB website and was heavily involved in the development of components through HTML and SCSS & JQuery. I also created animation and interaction through the use of CSS keyframes",
 			"image": "/images/sdb-logo.svg",
-			"href": "https://www.seederdeboer.nl/"
+			"href": "https://www.seederdeboer.nl/",
+			"techTags": ["Development", "Craft CMS", "Twig", "SCSS", "Tailwind", "jQuery"],
+			"designTags": []
 		},
 		{
 			"name": "Wired Modules",
@@ -37,7 +43,9 @@
 			"date": "2025",
 			"description": "I worked to create injectable modules for partner sites, to allow for discounts to be displayed in article pages.",
 			"image": "/images/wired-logo.svg",
-			"href": "https://www.wired.com/story/dell-coupon-code/"
+			"href": "https://www.wired.com/story/dell-coupon-code/",
+			"techTags": ["Development", "HTML", "SCSS"],
+			"designTags": []
 		},
 		{
 			"name": "Aesōp Web Design",
@@ -46,7 +54,9 @@
 			"date": "2021",
 			"description": "I designed a mock website using the Aesōp brand for inspiration",
 			"image": "/images/aesop-mockup.png",
-			"href": "https://www.behance.net/gallery/130637395/Aesop-Website-Redesign"
+			"href": "https://www.behance.net/gallery/130637395/Aesop-Website-Redesign",
+			"techTags": [],
+			"designTags": ["Design", "UX Research", "Figma"]
 		},
 		{
 			"name": "Brand Guidelines: Neural Sense",
@@ -55,7 +65,9 @@
 			"role": "Design",
 			"description": "Designed visual components and guidelines to align brand identity accross platforms. Created with none-designers in mind, back to basics.",
 			"image": "/images/neural-sense-cover.jpg",
-			"href": "https://www.behance.net/gallery/234562763/Brand-Guidelines"
+			"href": "https://www.behance.net/gallery/234562763/Brand-Guidelines",
+			"techTags": [],
+			"designTags": ["Design", "Brand Guidelines", "Figma"]
 		},
 		{
 			"name": "Independent Voucher codes",
@@ -64,7 +76,9 @@
 			"date": "2023-2025",
 			"description": "I worked on all pages within the Independent Voucher Codes subdomain including home, shop, category, campaign pages, widgets and more.",
 			"image": "/images/indy-logo.png",
-			"href": "https://www.independent.co.uk/vouchercodes"
+			"href": "https://www.independent.co.uk/vouchercodes",
+			"techTags": ["Development", "HTML", "SCSS", "TypeScript"],
+			"designTags": []
 		},
 		{
 			"name": "Little Dragon Project",
@@ -73,7 +87,9 @@
 			"role": "Design & Development",
 			"description": "This was a project I design and developed in 2021 with the goal of integrating different media types into one site. Link to the GitHub code files is provided.",
 			"image": "/images/little-dragon-mockup.png",
-			"href": "https://github.com/janeyheyny/2021/tree/main/Multi-media%20Site%20Little%20dragon"
+			"href": "https://github.com/janeyheyny/2021/tree/main/Multi-media%20Site%20Little%20dragon",
+			"techTags": ["Development", "HTML", "SCSS"],
+			"designTags": ["Design", "Figma"]
 		},
 		{
 			"name": "Cupon.es",
@@ -82,7 +98,9 @@
 			"date": "2024-2025",
 			"description": "I started working on this site heavily in 2024 when it became a key revenue generating site. The site was old and therefore new DRY, best practices and accessibility were enhanced. Active",
 			"image": "/images/cupones-logo.png",
-			"href": "https://cupon.es/"
+			"href": "https://cupon.es/",
+			"techTags": ["Development", "HTML", "SCSS"],
+			"designTags": []
 		},
 		{
 			"name": "LA Times Discounts",
@@ -91,7 +109,9 @@
 			"date": "2023-2024",
 			"description": "This was one of my favourite sites to work on in the early days at Samwise.",
 			"image": "/images/latimes-logo.svg",
-			"href": "https://web.archive.org/web/20241005004825/https://www.latimes.com/coupon-codes"
+			"href": "https://web.archive.org/web/20241005004825/https://www.latimes.com/coupon-codes",
+			"techTags": ["Development", "HTML", "SCSS"],
+			"designTags": []
 		},
 		{
 			"name": "Washington Post Discounts",
@@ -100,7 +120,9 @@
 			"date": "2023-2024",
 			"description": "Mostly worked on this site in a maintainance capacity after its launch. It was built upon a newer faster and perfomance orientated theme.",
 			"image": "/images/wp-logo.svg",
-			"href": "https://web.archive.org/web/20231122135436/https://www.washingtonpost.com/coupons"
+			"href": "https://web.archive.org/web/20231122135436/https://www.washingtonpost.com/coupons",
+			"techTags": ["Development", "HTML", "SCSS"],
+			"designTags": []
 		},
 		{
 			"name": "Wired Codes",
@@ -109,7 +131,9 @@
 			"date": "2023-2024",
 			"description": "In 2023/2024 I helped build a new completely widget in the CMS called the 'multipurpose' widget. Thereafter I helped maintain the site which one of the top priorities in the company. Inactive currently, historical archive link provided.",
 			"image": "/images/wired-logo.svg",
-			"href": "https://archive.ph/UxJsN"
+			"href": "https://archive.ph/UxJsN",
+			"techTags": ["Development", "HTML", "SCSS", "TypeScript"],
+			"designTags": []
 		},
 		{
 			"name": "Nouvelobs Code Promos",
@@ -118,7 +142,9 @@
 			"role": "Development",
 			"description": "This was one of my first main priority sites when I joined Samwise in 2023. I worked closely with the designer to improve https://www.nouvelobs.com/codepromo",
 			"image": "/images/nouvelobs-logo.png",
-			"href": ""
+			"href": "",
+			"techTags": ["Development", "HTML", "SCSS"],
+			"designTags": []
 		},
 		{
 			"name": "ABC.es Descuentos",
@@ -127,7 +153,9 @@
 			"role": "Development",
 			"description": "I was involved in a lot of maintainance of https://descuentos.abc.es and also a redesign. It was built on legacy code so I contributed more up to date code using best practices.",
 			"image": "/images/abc-logo.png",
-			"href": ""
+			"href": "",
+			"techTags": ["Development", "HTML", "SCSS"],
+			"designTags": []
 		},
 		{
 			"name": "Tecmundo Modules",
@@ -136,7 +164,9 @@
 			"role": "Development",
 			"description": "I created this module on my own using SCSS, Typescript and Lit. Link provided can be visible by setting your VPN to South America",
 			"image": "/images/tecmundo-logo.png",
-			"href": "https://www.tecmundo.com.br/produto/402751-cupom-insider.html"
+			"href": "https://www.tecmundo.com.br/produto/402751-cupom-insider.html",
+			"techTags": ["Development", "SCSS", "TypeScript", "Lit"],
+			"designTags": []
 		},
 		{
 			"name": "De Huidkliniek",
@@ -145,7 +175,9 @@
 			"role": "Development",
 			"description": "Worked as a developer on this project while at Fonk. Built and styled components with HTML, CSS, JS & Bootstrap such as the hero, accordion, quote, blog cards, blog pages, and parts of the content sections.",
 			"image": "/images/dehuidkliniek-logo.png",
-			"href": "https://dehuidkliniek.nl/"
+			"href": "https://dehuidkliniek.nl/",
+			"techTags": ["Development", "Craft CMS", "Twig", "SCSS", "Bootstrap"],
+			"designTags": []
 		},
 		{
 			"name": "Hoop",
@@ -154,7 +186,9 @@
 			"role": "Development",
 			"description": "Implementing some desired style changes for the client in CSS, addition and alteration of basic Shopify components in Liquid.",
 			"image": "/images/hoop-logo.png",
-			"href": "https://www.hoop.co.za/"
+			"href": "https://www.hoop.co.za/",
+			"techTags": ["Development", "SCSS", "Liquid"],
+			"designTags": []
 		},
 		{
 			"name": "I am",
@@ -163,7 +197,9 @@
 			"role": "Design & Development",
 			"description": "A small Vue project where I designed and developed a site at the start of my development career. The site code is available on GitHub.",
 			"image": "/images/iam-mockup.png",
-			"href": "https://github.com/janeyheyny/2021/tree/main/Affirmations%20Vue%20site%20i.am."
+			"href": "https://github.com/janeyheyny/2021/tree/main/Affirmations%20Vue%20site%20i.am.",
+			"techTags": ["Development", "Vue", "HTML", "SCSS"],
+			"designTags": ["Design", "Figma"]
 		},
 		{
 			"name": "Branding & Strategy: Eden all natural",
@@ -172,7 +208,9 @@
 			"role": "Branding & Strategy",
 			"description": "My final project for my Strategic Branding Postgraduate degree includes product and market research, environmental analysis, insights and strategy.",
 			"image": "/images/brand-challenge-cover.png",
-			"href": "https://www.flipsnack.com/99AB5FD6AED/branding-eden-all-natural-challenge/"
+			"href": "https://www.flipsnack.com/99AB5FD6AED/branding-eden-all-natural-challenge/",
+			"techTags": [],
+			"designTags": ["Design", "Brand Guidelines", "Strategy"]
 		}
 	],
 	"footerLink": { "label": "See all projects", "href": "#projects" }

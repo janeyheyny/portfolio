@@ -56,7 +56,7 @@
     "bubbles": [
       {
         "title": "Development",
-        "items": ["HTML", "CSS / SCSS", "JavaScript", "TypeScript", "React", "Component development", "CSS methodologies", "Responsive implementation", "Cross-browser compatibility", "Performance optimisation", "Testing & quality", "Code reviews", "Git", "MySQL", "CMP"]
+        "items": [" HTML/ CSS / JavaScript", "TypeScript, React", "Component development", "CSS methodologies", "Responsive implementation", "Cross-browser compatibility", "Performance optimisation", "Testing & quality", "Code reviews", "Git", "MySQL", "CMP"]
       },
       {
         "title": "UX / UI Design",

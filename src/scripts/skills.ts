@@ -1,51 +1,92 @@
 import { gsap, ScrollTrigger } from './gsap';
 
-const section = document.querySelector<HTMLElement>('.skills');
-const hoveredBubbles = Array.from(document.querySelectorAll<HTMLElement>('[data-bubble]'));
-let openBubble: HTMLElement | null = null;
+const skillsSection = document.querySelector<HTMLElement>('.skills');
+const bubbles = Array.from(document.querySelectorAll<HTMLElement>('[data-bubble]'));
+const desktopMQ = window.matchMedia('(min-width: 40rem)');
 
-function activate(hoveredBubble: HTMLElement) {
-  if (openBubble && openBubble !== hoveredBubble) deactivate(openBubble);
-  if (openBubble === hoveredBubble) return;
+const ACTIVE_CLASS = 'skills__bubble--active';
+const MEASURING_CLASS = 'skills__bubble--measuring';
 
-  const list = hoveredBubble.querySelector<HTMLElement>('.skills__bubble-list');
+// Measure all bubbles upfront so hover only needs a class toggle — no mid-animation layout reads.
+const MOBILE_SIZE_BUFFER = 1.15;
 
-  // Measure at fit-content width so text isn't artificially wrapped, giving an accurate height
-  gsap.set(hoveredBubble, { width: 'fit-content', height: 'auto', padding: '2.5rem' });
-  if (list) gsap.set(list, { maxHeight: 9999, marginTop: '0.8rem' });
-  const size = hoveredBubble.scrollHeight;
-  gsap.set(hoveredBubble, { width: '13rem', height: '13rem', padding: '1.5rem' });
-  if (list) gsap.set(list, { maxHeight: 0, marginTop: 0 });
+const precomputeSizes = () => {
+  const isMobile = !desktopMQ.matches;
+  bubbles.forEach((bubble) => {
+    bubble.classList.add(MEASURING_CLASS);
+    const size = Math.max(bubble.scrollWidth, bubble.scrollHeight);
+    bubble.classList.remove(MEASURING_CLASS);
+    bubble.style.setProperty('--expanded-size', `${isMobile ? size * MOBILE_SIZE_BUFFER : size}px`);
+  });
+};
 
-  gsap.to(hoveredBubble, { width: size, height: size, backgroundColor: 'var(--color-carbon-black)', color: 'var(--color-luna-white)', borderColor: 'transparent', padding: '2.5rem', duration: 1, ease: 'power2.inOut' });
-  if (list) gsap.to(list, { maxHeight: size, opacity: 1, marginTop: '0.8rem', duration: 1.8, delay: 0.2, ease: 'power2.inOut' });
+const setActive = (bubble: HTMLElement, active: boolean) => {
+  bubble.classList.toggle(ACTIVE_CLASS, active);
+  bubble.setAttribute('aria-expanded', String(active));
+};
 
-  openBubble = hoveredBubble;
-}
+const setSingleActive = (target: HTMLElement) => {
+  bubbles.forEach((b) => setActive(b, b === target));
+};
 
-function deactivate(hoveredBubble: HTMLElement) {
-  const list = hoveredBubble.querySelector<HTMLElement>('.skills__bubble-list');
+if (skillsSection && bubbles.length) {
+  precomputeSizes();
+  setSingleActive(bubbles[0]);
 
-  gsap.killTweensOf(hoveredBubble);
-  if (list) gsap.killTweensOf(list);
+  bubbles.forEach((bubble) => {
+    bubble.addEventListener('mouseenter', () => {
+      if (desktopMQ.matches) setSingleActive(bubble);
+    });
 
-  if (list) gsap.to(list, { maxHeight: 0, opacity: 0, marginTop: 0, duration: 0.8, ease: 'power2.out' });
-  gsap.to(hoveredBubble, { width: '13rem', height: '13rem', backgroundColor: 'transparent', color: 'var(--color-carbon-black)', borderColor: 'var(--color-carbon-black)', padding: '1.5rem', duration: 1.2, delay: 0.5, ease: 'power3.inOut' });
-}
+    bubble.addEventListener('focus', () => {
+      if (desktopMQ.matches) setSingleActive(bubble);
+    });
 
-if (section) {
-  ScrollTrigger.create({
-    trigger: section,
-    start: 'top 70%',
-    end: 'bottom top',
-    onEnter: () => activate(hoveredBubbles[0]),
-    onLeave: () => { hoveredBubbles.forEach(deactivate); openBubble = null; },
-    onEnterBack: () => activate(hoveredBubbles[0]),
-    onLeaveBack: () => { hoveredBubbles.forEach(deactivate); openBubble = null; },
+    bubble.addEventListener('click', () => {
+      if (desktopMQ.matches) {
+        setSingleActive(bubble);
+      } else {
+        setActive(bubble, !bubble.classList.contains(ACTIVE_CLASS));
+      }
+    });
+
+    bubble.addEventListener('keydown', (event) => {
+      if (event.key !== 'Enter' && event.key !== ' ') return;
+      event.preventDefault();
+      bubble.click();
+    });
+  });
+
+  const mm = gsap.matchMedia();
+
+  mm.add('(max-width: 39.99rem)', () => {
+    setSingleActive(bubbles[0]);
+
+    const getIndexFromProgress = (progress: number) =>
+      Math.min(Math.floor(progress * bubbles.length), bubbles.length - 1);
+
+    const trigger = ScrollTrigger.create({
+      trigger: skillsSection,
+      start: 'top 70%',
+      end: 'bottom 40%',
+      invalidateOnRefresh: true,
+      onEnter: () => setSingleActive(bubbles[0]),
+      onEnterBack: () => setSingleActive(bubbles.at(-1)!),
+      onLeave: () => setSingleActive(bubbles.at(-1)!),
+      onLeaveBack: () => setSingleActive(bubbles[0]),
+      onUpdate: ({ progress }) => setSingleActive(bubbles[getIndexFromProgress(progress)]),
+    });
+
+    return () => trigger.kill();
+  });
+
+  mm.add('(min-width: 40rem)', () => {
+    setSingleActive(bubbles[0]);
+  });
+
+  let resizeRaf = 0;
+  window.addEventListener('resize', () => {
+    if (resizeRaf) cancelAnimationFrame(resizeRaf);
+    resizeRaf = requestAnimationFrame(precomputeSizes);
   });
 }
-
-hoveredBubbles.forEach(b => {
-  b.addEventListener('mouseenter', () => activate(b));
-  b.addEventListener('focus', () => activate(b));
-});

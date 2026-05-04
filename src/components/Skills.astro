@@ -7,11 +7,18 @@ const { skills } = Astro.props;
     <h2 class="section__title">{skills.title}</h2>
     <p class="skills__intro">{skills.intro}</p>
     <div class="skills__bubbles">
-      {skills.bubbles.map((bubble: { title: string; items: string[] }) => (
-        <div class="skills__bubble" data-bubble tabindex="0">
+      {skills.bubbles.map((bubble: { title: string; items: string[] }, index: number) => (
+        <div
+          class="skills__bubble"
+          data-bubble
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-controls={`skills-bubble-list-${index}`}
+        >
           <div class="skills__bubble-inner">
             <span class="skills__bubble-title">{bubble.title}</span>
-            <ul class="skills__bubble-list">
+            <ul class="skills__bubble-list" id={`skills-bubble-list-${index}`}>
               {bubble.items.map((item: string) => <li>{item}</li>)}
             </ul>
           </div>

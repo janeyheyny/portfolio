@@ -7,7 +7,10 @@
 				"headline": "UX & Front-end Engineering Case study:",
 				"description": "Scrappy under-resourced project quietly becomes the revenue driver",
 				"image": "/images/rns-mockup.png",
+				"images": [],
 				"tags": ["Development", "React", "Performance", "Design", "UX Research", "A/B Testing"],
+				"techTags": ["Development", "Javascript", "SCSS", "React", "Performance"],
+				"designTags": ["Design", "UX Research", "A/B Testing"],
 				"href": "/projects/case-study-name",
 				"siteHref": "https://rankandstyle.com/",
 				"content": [
@@ -39,10 +42,12 @@
 			},
 			{
 				"title": "e-wolf",
-				"headline": "Freelance Brand Design: What happens when a website needs a brand first?",
+				"headline": "Freelance Brand Design:",
 				"description": "What happens when a website needs a brand first?",
 				"image": "/images/ewolf.jpg",
-				"tags": ["Design", "Brand Guidelines", "Figma", "Design system"],
+				"images": [],
+				"techTags": [],
+				"designTags": ["Design", "Design system", "Graphic Design", "Brand Guidelines"],
 				"href": "/projects/case-study-name-2",
 				"siteHref": "https://www.behance.net/gallery/220717303/Corporate-Design-Freelance",
 				"content": [
@@ -81,10 +86,12 @@
 			},
 			{
 				"title": "Slickdeals",
-				"headline": "Front-end Case Study: From zero to launch: building a promo codes site for speed and scale",
+				"headline": "Front-end Case Study:",
 				"description": "From zero to launch: building a promo codes site for speed and scale",
 				"image": "/images/slickdeals-mockup.png",
-				"tags": ["Strategy", "UI", "Build"],
+				"images": [],
+				"techTags": [ "Development","Performance", "ERB", "SCSS", "TypeScript"],
+				"designTags": [],
 				"href": "/projects/case-study-name-3",
 				"siteHref": "https://slickdeals.net/promo-codes",
 				"content": [
@@ -118,10 +125,13 @@
 			},
 			{
 				"title": "Portfolio",
-				"headline": "UX & Development Case Study: Designing & building this portfolio",
+				"headline": "UX & Development Case Study:",
 				"description": "Designing & building a personal portfolio as a UX engineer",
-				"tags": ["Design", "Strategy", "UX", "Development", "HTML", "SCSS", "JavaScript", "json", "GSAP"],
+				"tags": ["Design", "Strategy", "UX", "Development", "HTML", "SCSS", "TypeScript", "json", "GSAP"],
+				"techTags": ["Development", "HTML", "SCSS", "JavaScript", "GSAP", "Astro"],
+				"designTags": ["Design", "Strategy", "UX"],
 				"image": "/images/portfolio.png",
+				"images": [],
 				"href": "/projects/portfolio",
 				"content": [
 					{

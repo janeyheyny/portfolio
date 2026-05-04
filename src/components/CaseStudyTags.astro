@@ -1,0 +1,33 @@
+---
+interface Props {
+  techTags?: string[];
+  designTags?: string[];
+}
+
+const { techTags = [], designTags = [] } = Astro.props;
+const hasTags = techTags.length > 0 || designTags.length > 0;
+---
+
+{hasTags && (
+  <ul class="case-studies__tags">
+    {techTags.map((tag) => (
+      <li class="case-studies__tag">
+        {tag === 'Development' && (
+          <svg viewBox="0 0 16 12" width="16" height="12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M5 1L1 6L5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11 1L15 6L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        )}
+        {tag}
+      </li>
+    ))}
+    {designTags.map((tag) => (
+      <li class="case-studies__tag case-studies__tag--design">
+        {tag === 'Design' && (
+          <img src="/images/icon-design.svg" alt="" width="14" height="15" aria-hidden="true" />
+        )}
+        {tag}
+      </li>
+    ))}
+  </ul>
+)}

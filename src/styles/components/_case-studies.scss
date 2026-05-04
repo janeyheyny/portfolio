@@ -8,7 +8,7 @@
     bottom: -1px;
     background-color: var(--color-carbon-black);
     width: 100vw;
-    height: 382px;
+    height: 402px;
     display: inline-block;
     content: " ";
     z-index: 0;
@@ -106,7 +106,7 @@
     padding: 2rem;
     width: 32.8rem;
     box-sizing: border-box;
-    height: 31.1rem;
+    height: 33rem;
     display: block;
     text-decoration: none;
     color: inherit;
@@ -155,11 +155,14 @@
   }
 
   &__tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     border: 1px solid var(--color-burnt-orange-faded);
     color: var(--color-burnt-orange-faded);
     font-family: var(--font-raleway);
     font-weight: 500;
-    height: 36px;
+    height: 34px;
     font-size: 1.4rem;
     letter-spacing: -0.014rem;
     padding: 0.8rem 1.4rem 0.6rem 1.4rem;

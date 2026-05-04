@@ -1,15 +1,15 @@
 ---
-// Preview cards — summary view only.
-// Full expanded case study pages will use the same caseStudies.json data.
+import CaseStudyTags from './CaseStudyTags.astro';
 
 interface CaseStudyItem {
-    title: string;
-    headline: string;
-    description: string;
-    image?: string;
-    tags?: string[];
-    href?: string;
-    siteHref?: string;
+  title: string;
+  headline: string;
+  description: string;
+  image?: string;
+  techTags?: string[];
+  designTags?: string[];
+  href?: string;
+  siteHref?: string;
 }
 
 interface Props {
@@ -20,14 +20,6 @@ interface Props {
 }
 
 const { caseStudies } = Astro.props;
-
-const designTags = new Set([
-  'design', 'ux research', 'a/b testing', 'brand guidelines',
-  'strategy', 'ux', 'ui', 'figma', 'design system'
-]);
-
-const getTagModifier = (tag: string) =>
-  designTags.has(tag.toLowerCase()) ? 'case-studies__tag--design' : '';
 ---
 
 <section class="section case-studies" id="case-studies">
@@ -47,13 +39,7 @@ const getTagModifier = (tag: string) =>
           <h3 class="case-studies__name">{item.title}</h3>
           <p class="case-studies__headline">{item.headline}</p>
           <p class="case-studies__description">{item.description}</p>
-          {item.tags && item.tags.length > 0 && (
-            <ul class="case-studies__tags">
-              {item.tags.map((tag) => (
-                  <li class={`case-studies__tag ${getTagModifier(tag)}`}>{tag}</li>
-              ))}
-            </ul>
-          )}
+          <CaseStudyTags techTags={item.techTags} designTags={item.designTags} />
         </a>
       </div>
     ))}

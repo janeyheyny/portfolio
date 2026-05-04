@@ -1,12 +1,26 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import CaseStudySpread from "../components/CaseStudySpread.astro";
+import MoreProjects from "../components/MoreProjects.astro";
+import caseStudiesData from "../data/caseStudies.json";
+import projectsData from "../data/projects.json";
+import homeData from "../data/home.json";
 ---
 
 <Layout
   title="Projects & Case Studies | Jane Heyn — UX Engineer"
   description="UX engineering projects and case studies including front-end development, UX design, accessibility and performance"
 >
+  <Header nav={homeData.nav} />
   <main>
-    ...
+    <section class="section">
+      <div class="container">
+        <h1 class="projects-page__title sr-only">Projects & Case Studies</h1>
+        {caseStudiesData.caseStudies.items.map((item) => (
+          <CaseStudySpread item={item} />
+        ))}
+      </div>
+    </section>
   </main>
 </Layout>

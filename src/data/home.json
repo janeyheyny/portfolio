@@ -2,13 +2,12 @@
   "nav": {
     "logo": { "label": "Jane Heyn", "href": "/images/header-logo.svg" },
     "items": [
-      { "label": "About", "href": "#about" },
-      { "label": "Services", "href": "#services" },
+      { "label": "Services", "href": "/#services" },
       { "label": "Projects", "href": "/projects" },
-      { "label": "Skills", "href": "#skills" },
-      { "label": "Experience", "href": "#experience" }
+      { "label": "Skills", "href": "/#skills" },
+      { "label": "Experience", "href": "/#experience" }
     ],
-    "cta": { "label": "Contact", "href": "#contact" }
+    "cta": { "label": "Contact", "href": "/#contact" }
   },
 
   "hero": {
@@ -25,7 +24,7 @@
       "alt": "Portrait of Jane Heyn"
     },
     "actions": [
-      { "label": "Work with me", "href": "#contact", "variant": "primary" },
+      { "label": "Work with me", "href": "/#contact", "variant": "primary" },
       { "label": "Case studies", "href": "/projects", "variant": "minimal" }
     ]
   },

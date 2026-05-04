@@ -1,0 +1,62 @@
+@use '../breakpoints' as *;
+
+.footer {
+  background-color: var(--color-luna-medium);
+  font-family: var(--font-raleway);
+  min-height: 17rem;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    min-height: 17rem;
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem 3rem;
+  }
+
+  &__nav__item {
+    text-decoration: none;
+    color: var(--color-pure-black);
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  &__social__link {
+    display: flex;
+    align-items: center;
+    color: var(--color-pure-black);
+    transition: color 0.2s ease;
+
+    svg {
+      width: 3.1rem;
+      height: 3.1rem;
+    }
+
+    &:nth-child(2) svg {
+      width: 4.1rem;
+      height: auto;
+    }
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+}

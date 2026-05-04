@@ -1,5 +1,12 @@
 ---
 const { nav } = Astro.props;
+const currentPath = Astro.url.pathname;
+
+function isActive(href: string): boolean {
+  // Anchor links are handled client-side via scroll-spy
+  if (href.startsWith('/#')) return false;
+  return currentPath === href || currentPath.startsWith(href + '/');
+}
 ---
 
 <header class="header">
@@ -18,8 +25,12 @@ const { nav } = Astro.props;
     </label>
 
     <nav id="primary-nav" class="header__nav" aria-label="Primary navigation">
-      {nav.items.map((item: { href: string | URL | null | undefined; label: unknown; }) => (
-        <a class="header__nav__item" href={item.href}>{item.label}</a>
+      {nav.items.map((item: { href: string; label: unknown; }) => (
+        <a
+          class:list={["header__nav__item", { "header__nav__item--active": isActive(item.href) }]}
+          href={item.href}
+          data-nav-href={item.href}
+        >{item.label}</a>
       ))}
 
       <a class="button button--secondary header__cta--mobile" href={nav.cta.href}>
@@ -32,3 +43,35 @@ const { nav } = Astro.props;
     </a>
   </div>
 </header>
+
+<script>
+  const navLinks = document.querySelectorAll<HTMLElement>('[data-nav-href]');
+  const anchorLinks = [...navLinks].filter(el => el.dataset.navHref?.startsWith('/#'));
+
+  if (anchorLinks.length === 0) return;
+
+  const sectionIds = anchorLinks.map(el => el.dataset.navHref!.slice(2));
+  const sections = sectionIds
+    .map(id => document.getElementById(id))
+    .filter(Boolean) as HTMLElement[];
+
+  let current = '';
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          current = entry.target.id;
+        }
+      });
+
+      anchorLinks.forEach(link => {
+        const targetId = link.dataset.navHref!.slice(2);
+        link.classList.toggle('header__nav__item--active', targetId === current);
+      });
+    },
+    { rootMargin: '-30% 0px -60% 0px', threshold: 0 }
+  );
+
+  sections.forEach(section => observer.observe(section));
+</script>

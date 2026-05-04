@@ -69,8 +69,15 @@
   &__nav__item {
     text-decoration: none;
     color: inherit;
-    padding: 0.4rem 0;
+    padding: 0.4rem 0 0 0;
     font-size: 1.6rem;
+    transition: color 0.2s ease;
+    &:hover {
+      color: var(--color-accent);
+    }
+    &--active {
+      border-bottom: 1px solid currentColor;
+    }
   }
 
   .button--secondary {
